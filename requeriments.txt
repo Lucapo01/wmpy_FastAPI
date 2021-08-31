@@ -9,4 +9,4 @@ websockets==8.1
 python-decouple == 3.4.0
 openpyxl == 3.0.7
 pyhomebroker == 0.45
-fastapi == 0.68.1
+fastapi[all] == 0.68.1
