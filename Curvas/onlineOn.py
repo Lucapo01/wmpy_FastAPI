@@ -141,8 +141,8 @@ def cargarCSV(todos):
                         listaF.append(dia)
                         listaP.append(total)
 
-            dicF[nombre] = listaF
-            dicP[nombre] = listaP
+            dicF[nombre.strip("\\")] = listaF
+            dicP[nombre.strip("\\")] = listaP
 
     return dicF, dicP
 
@@ -203,10 +203,10 @@ def iniciarTabla(bonds):
             locPrev = bonds.loc[((i+"d").upper(),'48hs'),'previous_close']
             if np.isnan(loc) == False:
                 dicAPI[i+"o"] = float(loc)*-1
-                print("LAST---------------------- in", i)
+                #print("LAST---------------------- in", i)
             elif np.isnan(locPrev) == False:
                 dicAPI[i+"o"] = float(locPrev)*-1
-                print("PREVIOUS---------------------- in", i)
+                #print("PREVIOUS---------------------- in", i)
             else:
                 todos.remove(i)
         except:
@@ -224,6 +224,8 @@ def iniciarTabla(bonds):
         print("PROBLEMAS EN TIR O GRAFICAR")
 
     # print("MAT INICIAL ",mat)
+
+    print("On Actualizado")
 
     return graficoInicial
 
