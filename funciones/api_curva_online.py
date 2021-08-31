@@ -18,10 +18,12 @@ def main():
         # Get the market snapshot
         snapshot = hb.online.get_market_snapshot()
 
-        # Save each board with its settlements to a CSV file
-        # date = '{}'.format(datetime.now().strftime('%Y%m%d'))
-        # for board in snapshot:
-        #     snapshot[board].to_csv('{}_{}'.format(date, board))
+        #Save each board with its settlements to a CSV file
+        #date = '{}'.format(datetime.now().strftime('%Y%m%d'))
+        
+        snapshot["government_bonds"].to_csv('{}'.format("funciones/government_bonds.csv"))
+        snapshot["corporate_bonds"].to_csv('{}'.format("funciones/corporate_bonds.csv"))
+
 
 
         '''
@@ -51,18 +53,19 @@ def main():
 
         print("ACTUALIZANDO CURVA")
 
-        try:
-                modul_dir = os.path.dirname(__file__)
-                government_bonds.to_csv(os.path.join(modul_dir,r"government_bonds.csv"), na_rep = np.nan, index_label=None)
-                corporate_bonds.to_csv(os.path.join(modul_dir,r"corporate_bonds.csv"), na_rep = np.nan, index_label=None)
-        except Exception as e:
-               print("Error creating CSV: ", e)
-        finally:
-                return government_bonds, corporate_bonds
+        # try:
+        #         modul_dir = os.path.dirname(__file__)
+        #         government_bonds.to_csv(os.path.join(modul_dir,r"government_bonds.csv"), na_rep = np.nan, index_label=None)
+        #         corporate_bonds.to_csv(os.path.join(modul_dir,r"corporate_bonds.csv"), na_rep = np.nan, index_label=None)
+        # except Exception as e:
+        #        print("Error creating CSV: ", e)
+        # finally:
+        #         return government_bonds, corporate_bonds
 
 
-# pandas.set_option('display.max_rows', None)
+#pandas.set_option('display.max_rows', None)
 # government_bonds, corporate_bonds = main()
 # print(government_bonds)
 # print("---------------------------------------------------------------------")
 # print(corporate_bonds)
+main()

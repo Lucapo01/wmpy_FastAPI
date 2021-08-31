@@ -1,448 +1,448 @@
 symbol,settlement,last,change,open,high,low,previous_close,turnover,volume,operations,datetime
-AER2C,spot,nan,nan,nan,nan,nan,55.8,nan,nan,nan,nan
-AER2C,24hs,nan,nan,nan,nan,nan,51.0,nan,nan,nan,nan
-AER2C,48hs,nan,nan,nan,nan,nan,54.0,nan,nan,nan,nan
+AER2C,spot,,,,,,55.8,,,,
+AER2C,24hs,,,,,,51.0,,,,
+AER2C,48hs,,,,,,54.0,,,,
 AER2D,spot,54.0,-0.91,54.0,54.0,54.0,54.5,30000.0,55556.0,1.0,2021-08-31 13:45:47
-AER2D,24hs,nan,nan,nan,nan,nan,53.0,nan,nan,nan,nan
-AER2D,48hs,nan,nan,nan,nan,nan,53.0,nan,nan,nan,nan
+AER2D,24hs,,,,,,53.0,,,,
+AER2D,48hs,,,,,,53.0,,,,
 AER2O,spot,9099.0,-4.36,9099.0,9099.0,9099.0,9514.0,5055040.0,55556.0,1.0,2021-08-31 13:49:16
-AER2O,24hs,nan,nan,nan,nan,nan,8884.0,nan,nan,nan,nan
-AER2O,48hs,nan,nan,nan,nan,nan,9550.0,nan,nan,nan,nan
-AGC1P,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-AGC1P,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-AGC1P,48hs,nan,nan,nan,nan,nan,9815.5,nan,nan,nan,nan
-BACAD,spot,nan,nan,nan,nan,nan,92.75,nan,nan,nan,nan
-BACAD,24hs,nan,nan,nan,nan,nan,64.31,nan,nan,nan,nan
-BACAD,48hs,nan,nan,nan,nan,nan,86.75,nan,nan,nan,nan
-BYC9C,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9C,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9D,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9D,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9D,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYC9O,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAC,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAC,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAC,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAD,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAD,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAD,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-BYCAO,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-CAC2D,spot,nan,nan,nan,nan,nan,101.0,nan,nan,nan,nan
-CAC2D,24hs,nan,nan,nan,nan,nan,102.5,nan,nan,nan,nan
-CAC2D,48hs,nan,nan,nan,nan,nan,101.0,nan,nan,nan,nan
-CAC2O,spot,nan,nan,nan,nan,nan,11163.597,nan,nan,nan,nan
-CAC2O,24hs,nan,nan,nan,nan,nan,17255.0,nan,nan,nan,nan
-CAC2O,48hs,17450.0,nan,17450.0,17450.0,17450.0,17450.0,174500.0,1000.0,1.0,2021-08-31 12:17:22
-CIC1O,spot,nan,nan,nan,nan,nan,7590.0,nan,nan,nan,nan
-CIC1O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-CIC1O,48hs,nan,nan,nan,nan,nan,9135.0,nan,nan,nan,nan
-CLISD,spot,nan,nan,nan,nan,nan,82.35,nan,nan,nan,nan
-CLISD,24hs,nan,nan,nan,nan,nan,82.0,nan,nan,nan,nan
-CLISD,48hs,nan,nan,nan,nan,nan,46.5,nan,nan,nan,nan
-CP17C,spot,nan,nan,nan,nan,nan,72.25,nan,nan,nan,nan
-CP17C,24hs,nan,nan,nan,nan,nan,96.0,nan,nan,nan,nan
-CP17C,48hs,nan,nan,nan,nan,nan,101.85,nan,nan,nan,nan
-CP17D,spot,nan,nan,nan,nan,nan,106.0,nan,nan,nan,nan
-CP17D,24hs,nan,nan,nan,nan,nan,103.8,nan,nan,nan,nan
+AER2O,24hs,,,,,,8884.0,,,,
+AER2O,48hs,,,,,,9550.0,,,,
+AGC1P,spot,,,,,,,,,,
+AGC1P,24hs,,,,,,,,,,
+AGC1P,48hs,,,,,,9815.5,,,,
+BACAD,spot,,,,,,92.75,,,,
+BACAD,24hs,,,,,,64.31,,,,
+BACAD,48hs,,,,,,86.75,,,,
+BYC9C,spot,,,,,,,,,,
+BYC9C,24hs,,,,,,,,,,
+BYC9C,48hs,,,,,,,,,,
+BYC9D,spot,,,,,,,,,,
+BYC9D,24hs,,,,,,,,,,
+BYC9D,48hs,,,,,,,,,,
+BYC9O,spot,,,,,,,,,,
+BYC9O,24hs,,,,,,,,,,
+BYC9O,48hs,,,,,,,,,,
+BYCAC,spot,,,,,,,,,,
+BYCAC,24hs,,,,,,,,,,
+BYCAC,48hs,,,,,,,,,,
+BYCAD,spot,,,,,,,,,,
+BYCAD,24hs,,,,,,,,,,
+BYCAD,48hs,,,,,,,,,,
+BYCAO,spot,,,,,,,,,,
+BYCAO,24hs,,,,,,,,,,
+BYCAO,48hs,,,,,,,,,,
+CAC2D,spot,,,,,,101.0,,,,
+CAC2D,24hs,,,,,,102.5,,,,
+CAC2D,48hs,,,,,,101.0,,,,
+CAC2O,spot,,,,,,11163.597,,,,
+CAC2O,24hs,,,,,,17255.0,,,,
+CAC2O,48hs,17450.0,,17450.0,17450.0,17450.0,17450.0,174500.0,1000.0,1.0,2021-08-31 12:17:22
+CIC1O,spot,,,,,,7590.0,,,,
+CIC1O,24hs,,,,,,,,,,
+CIC1O,48hs,,,,,,9135.0,,,,
+CLISD,spot,,,,,,82.35,,,,
+CLISD,24hs,,,,,,82.0,,,,
+CLISD,48hs,,,,,,46.5,,,,
+CP17C,spot,,,,,,72.25,,,,
+CP17C,24hs,,,,,,96.0,,,,
+CP17C,48hs,,,,,,101.85,,,,
+CP17D,spot,,,,,,106.0,,,,
+CP17D,24hs,,,,,,103.8,,,,
 CP17D,48hs,108.0,1.4,108.0,108.0,108.0,106.5,6480.0,6000.0,4.0,2021-08-31 14:46:06
-CP17O,spot,nan,nan,nan,nan,nan,16285.0,nan,nan,nan,nan
-CP17O,24hs,nan,nan,nan,nan,nan,16992.0,nan,nan,nan,nan
+CP17O,spot,,,,,,16285.0,,,,
+CP17O,24hs,,,,,,16992.0,,,,
 CP17O,48hs,18425.0,0.4,18425.0,18425.0,18400.0,18350.0,1473500.0,8000.0,4.0,2021-08-31 13:39:43
-CP21D,spot,nan,nan,nan,nan,nan,103.0,nan,nan,nan,nan
-CP21D,24hs,nan,nan,nan,nan,nan,100.25,nan,nan,nan,nan
+CP21D,spot,,,,,,103.0,,,,
+CP21D,24hs,,,,,,100.25,,,,
 CP21D,48hs,102.0,0.99,101.0,102.45,101.0,101.0,7384.0,7287.0,18.0,2021-08-31 15:15:05
-CP21O,spot,nan,nan,nan,nan,nan,17450.0,nan,nan,nan,nan
-CP21O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+CP21O,spot,,,,,,17450.0,,,,
+CP21O,24hs,,,,,,,,,,
 CP21O,48hs,17050.0,-0.29,17050.0,17150.0,16900.0,17100.0,1214295.0,7162.0,26.0,2021-08-31 15:31:22
-CPCAO,spot,nan,nan,nan,nan,nan,18657.5,nan,nan,nan,nan
-CPCAO,24hs,nan,nan,nan,nan,nan,18197.5,nan,nan,nan,nan
-CPCAO,48hs,nan,nan,nan,nan,nan,18572.0,nan,nan,nan,nan
+CPCAO,spot,,,,,,18657.5,,,,
+CPCAO,24hs,,,,,,18197.5,,,,
+CPCAO,48hs,,,,,,18572.0,,,,
 CRCED,spot,85.0,-5.55,85.0,85.0,85.0,90.0,1.0,1.0,1.0,2021-08-31 14:24:30
-CRCED,24hs,nan,nan,nan,nan,nan,63.376,nan,nan,nan,nan
-CRCED,48hs,85.25,1.66,85.0,85.25,84.0,83.85,15109.0,17907.0,35.0,2021-08-31 15:30:06
+CRCED,24hs,,,,,,63.376,,,,
+CRCED,48hs,84.0,0.17,85.0,85.25,84.0,83.85,15442.0,18303.0,39.0,2021-08-31 16:17:12
 CRCEO,spot,14600.0,-0.3,14610.0,14745.0,14600.0,14645.0,3798.0,26.0,4.0,2021-08-31 14:33:17
-CRCEO,24hs,nan,nan,nan,nan,nan,14252.0,nan,nan,nan,nan
-CRCEO,48hs,14600.0,nan,14750.0,14800.0,14500.0,14600.0,3372159.0,23046.0,93.0,2021-08-31 15:43:38
-CS34C,spot,nan,nan,nan,nan,nan,100.25,nan,nan,nan,nan
-CS34C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-CS34C,48hs,nan,nan,nan,nan,nan,98.6,nan,nan,nan,nan
+CRCEO,24hs,,,,,,14252.0,,,,
+CRCEO,48hs,14500.0,-0.68,14750.0,14800.0,14500.0,14600.0,3599752.0,24613.0,107.0,2021-08-31 16:17:36
+CS34C,spot,,,,,,100.25,,,,
+CS34C,24hs,,,,,,,,,,
+CS34C,48hs,,,,,,98.6,,,,
 CS34D,spot,102.0,-0.72,102.0,102.0,102.0,102.75,17261.0,16923.0,2.0,2021-08-31 13:20:03
-CS34D,24hs,nan,nan,nan,nan,nan,98.8,nan,nan,nan,nan
-CS34D,48hs,102.2,-0.04,102.2,102.2,102.2,102.25,1715.0,1678.0,1.0,2021-08-31 11:39:45
+CS34D,24hs,,,,,,98.8,,,,
+CS34D,48hs,101.7,-0.53,102.2,102.2,101.7,102.25,7372.0,7238.0,3.0,2021-08-31 16:20:37
 CS34O,spot,17800.0,0.84,17800.0,17800.0,17800.0,17650.0,3012294.0,16923.0,2.0,2021-08-31 13:20:53
-CS34O,48hs,17100.0,nan,17201.0,17300.0,17100.0,17100.5,369701.0,2152.0,5.0,2021-08-31 15:03:48
-CSDOD,spot,nan,nan,nan,nan,nan,98.0,nan,nan,nan,nan
-CSDOD,24hs,nan,nan,nan,nan,nan,96.727,nan,nan,nan,nan
-CSDOD,48hs,97.0,nan,97.5,97.5,97.0,97.0,82526.0,85028.0,55.0,2021-08-31 15:55:37
+CS34O,48hs,17100.0,,17201.0,17300.0,17100.0,17100.5,369701.0,2152.0,5.0,2021-08-31 15:03:48
+CSDOD,spot,,,,,,98.0,,,,
+CSDOD,24hs,,,,,,96.727,,,,
+CSDOD,48hs,97.0,,97.5,97.5,97.0,97.0,83504.0,86037.0,58.0,2021-08-31 16:17:17
 CSDOO,spot,16550.0,-0.89,16800.0,16800.0,16416.0,16700.0,3447963.0,20818.0,33.0,2021-08-31 15:34:01
 CSDOO,24hs,16416.0,-2.94,16416.0,16416.0,16416.0,16914.0,26266.0,160.0,1.0,2021-08-31 13:48:15
 CSDOO,48hs,16640.0,-0.35,16900.0,16949.5,16500.0,16699.0,7431007.0,44588.0,75.0,2021-08-31 15:57:41
-CSHVD,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-CSHVD,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-CSHVD,48hs,nan,nan,nan,nan,nan,50.255,nan,nan,nan,nan
-CSHVO,spot,nan,nan,nan,nan,nan,8575.183,nan,nan,nan,nan
-CSHVO,24hs,nan,nan,nan,nan,nan,8142.049,nan,nan,nan,nan
+CSHVD,spot,,,,,,,,,,
+CSHVD,24hs,,,,,,,,,,
+CSHVD,48hs,,,,,,50.255,,,,
+CSHVO,spot,,,,,,8575.183,,,,
+CSHVO,24hs,,,,,,8142.049,,,,
 CSHVO,48hs,9550.0,-1.03,9550.0,9550.0,9550.0,9650.0,95500.0,1000.0,1.0,2021-08-31 14:24:43
-CSIWO,spot,nan,nan,nan,nan,nan,8880.743,nan,nan,nan,nan
-CSIWO,24hs,nan,nan,nan,nan,nan,8358.905,nan,nan,nan,nan
+CSIWO,spot,,,,,,8880.743,,,,
+CSIWO,24hs,,,,,,8358.905,,,,
 CSIWO,48hs,9100.0,-0.55,9100.0,9100.0,9100.0,9150.834,2184.0,24.0,1.0,2021-08-31 14:45:48
-CSJXD,spot,nan,nan,nan,nan,nan,100.232,nan,nan,nan,nan
-CSJXD,48hs,nan,nan,nan,nan,nan,101.75,nan,nan,nan,nan
-CSJXO,spot,nan,nan,nan,nan,nan,17300.0,nan,nan,nan,nan
-CSJXO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-CSJXO,48hs,nan,nan,nan,nan,nan,17240.0,nan,nan,nan,nan
-CSJYD,spot,nan,nan,nan,nan,nan,102.0,nan,nan,nan,nan
-CSJYD,24hs,nan,nan,nan,nan,nan,99.732,nan,nan,nan,nan
+CSJXD,spot,,,,,,100.232,,,,
+CSJXD,48hs,,,,,,101.75,,,,
+CSJXO,spot,,,,,,17300.0,,,,
+CSJXO,24hs,,,,,,,,,,
+CSJXO,48hs,,,,,,17240.0,,,,
+CSJYD,spot,,,,,,102.0,,,,
+CSJYD,24hs,,,,,,99.732,,,,
 CSJYD,48hs,105.25,0.71,104.5,105.25,104.0,104.5,17126.0,16288.0,3.0,2021-08-31 13:49:15
-CSJYO,spot,nan,nan,nan,nan,nan,17679.865,nan,nan,nan,nan
+CSJYO,spot,,,,,,17679.865,,,,
 CSJYO,48hs,17812.5,0.07,17812.5,17812.5,17812.5,17800.0,2672.0,15.0,1.0,2021-08-31 15:49:30
-CSKZD,spot,nan,nan,nan,nan,nan,102.0,nan,nan,nan,nan
+CSKZD,spot,,,,,,102.0,,,,
 CSKZD,48hs,99.05,-2.41,100.0,100.0,99.05,101.5,994.0,999.0,2.0,2021-08-31 15:35:51
-CSKZO,spot,nan,nan,nan,nan,nan,16750.0,nan,nan,nan,nan
+CSKZO,spot,,,,,,16750.0,,,,
 CSKZO,48hs,17074.5,1.33,17100.0,17100.0,17074.5,16850.0,109731.0,642.0,2.0,2021-08-31 14:48:44
 GN34D,spot,99.5,-1.58,99.0,99.5,99.0,101.1,101666.0,102393.0,4.0,2021-08-31 14:23:57
-GN34D,24hs,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-GN34D,48hs,nan,nan,nan,nan,nan,99.0,nan,nan,nan,nan
-GN34O,spot,17127.0,nan,17127.0,17127.0,17127.0,17127.0,19696.0,115.0,1.0,2021-08-31 13:50:19
-GN34O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-GN34O,48hs,nan,nan,nan,nan,nan,17000.0,nan,nan,nan,nan
-GNCLD,spot,nan,nan,nan,nan,nan,100.7,nan,nan,nan,nan
-GNCLD,24hs,nan,nan,nan,nan,nan,100.5,nan,nan,nan,nan
-GNCLD,48hs,nan,nan,nan,nan,nan,102.0,nan,nan,nan,nan
-GNCUO,spot,nan,nan,nan,nan,nan,7380.5,nan,nan,nan,nan
-GNCUO,24hs,nan,nan,nan,nan,nan,7381.0,nan,nan,nan,nan
-GNCUO,48hs,nan,nan,nan,nan,nan,9700.0,nan,nan,nan,nan
-GNCWD,spot,nan,nan,nan,nan,nan,106.6,nan,nan,nan,nan
-GNCWD,24hs,nan,nan,nan,nan,nan,104.975,nan,nan,nan,nan
+GN34D,24hs,,,,,,100.0,,,,
+GN34D,48hs,,,,,,99.0,,,,
+GN34O,spot,17127.0,,17127.0,17127.0,17127.0,17127.0,19696.0,115.0,1.0,2021-08-31 13:50:19
+GN34O,24hs,,,,,,,,,,
+GN34O,48hs,17050.0,0.29,17050.0,17050.0,17050.0,17000.0,596750.0,3500.0,1.0,2021-08-31 16:09:40
+GNCLD,spot,,,,,,100.7,,,,
+GNCLD,24hs,,,,,,100.5,,,,
+GNCLD,48hs,,,,,,102.0,,,,
+GNCUO,spot,,,,,,7380.5,,,,
+GNCUO,24hs,,,,,,7381.0,,,,
+GNCUO,48hs,,,,,,9700.0,,,,
+GNCWD,spot,,,,,,106.6,,,,
+GNCWD,24hs,,,,,,104.975,,,,
 GNCWD,48hs,106.5,-0.46,108.0,108.0,106.5,107.0,11274.0,10561.0,13.0,2021-08-31 15:53:52
-GNCWO,spot,nan,nan,nan,nan,nan,18315.0,nan,nan,nan,nan
+GNCWO,spot,,,,,,18315.0,,,,
 GNCWO,48hs,18400.0,1.09,18300.0,18500.0,18200.0,18200.0,591131.0,3217.0,13.0,2021-08-31 15:36:27
-GNCYO,spot,nan,nan,nan,nan,nan,9687.5,nan,nan,nan,nan
-GNCYO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-GNCYO,48hs,nan,nan,nan,nan,nan,9895.0,nan,nan,nan,nan
-HBC4D,spot,nan,nan,nan,nan,nan,109.75,nan,nan,nan,nan
-HBC4D,24hs,nan,nan,nan,nan,nan,102.8,nan,nan,nan,nan
-HBC4D,48hs,nan,nan,nan,nan,nan,106.85,nan,nan,nan,nan
-HBC4O,spot,nan,nan,nan,nan,nan,19000.0,nan,nan,nan,nan
-HBC4O,24hs,nan,nan,nan,nan,nan,15048.673,nan,nan,nan,nan
-HBC4O,48hs,nan,nan,nan,nan,nan,17100.0,nan,nan,nan,nan
-HJC3D,spot,nan,nan,nan,nan,nan,102.5,nan,nan,nan,nan
-HJC3D,24hs,nan,nan,nan,nan,nan,98.54,nan,nan,nan,nan
-HJC3D,48hs,nan,nan,nan,nan,nan,101.25,nan,nan,nan,nan
-HJC7D,spot,nan,nan,nan,nan,nan,107.0,nan,nan,nan,nan
-HJC7D,24hs,103.4,nan,103.4,103.4,103.4,103.4,38258.0,37000.0,3.0,2021-08-31 14:12:29
-HJC7D,48hs,nan,nan,nan,nan,nan,103.75,nan,nan,nan,nan
+GNCYO,spot,,,,,,9687.5,,,,
+GNCYO,24hs,,,,,,,,,,
+GNCYO,48hs,,,,,,9895.0,,,,
+HBC4D,spot,,,,,,109.75,,,,
+HBC4D,24hs,,,,,,102.8,,,,
+HBC4D,48hs,,,,,,106.85,,,,
+HBC4O,spot,,,,,,19000.0,,,,
+HBC4O,24hs,,,,,,15048.673,,,,
+HBC4O,48hs,,,,,,17100.0,,,,
+HJC3D,spot,,,,,,102.5,,,,
+HJC3D,24hs,,,,,,98.54,,,,
+HJC3D,48hs,,,,,,101.25,,,,
+HJC7D,spot,,,,,,107.0,,,,
+HJC7D,24hs,103.4,,103.4,103.4,103.4,103.4,51700.0,50000.0,4.0,2021-08-31 16:08:15
+HJC7D,48hs,,,,,,103.75,,,,
 HJC7O,spot,18148.0,0.32,18148.0,18148.0,18148.0,18090.0,1996280.0,11000.0,1.0,2021-08-31 15:02:15
-HJC7O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-HJC7O,48hs,18130.0,nan,18130.0,18130.0,18130.0,nan,1994300.0,11000.0,1.0,2021-08-31 13:40:12
-IRC1D,spot,nan,nan,nan,nan,nan,101.479,nan,nan,nan,nan
-IRC1D,24hs,nan,nan,nan,nan,nan,87.603,nan,nan,nan,nan
-IRC1D,48hs,105.0,nan,105.0,105.0,105.0,105.0,840.0,800.0,1.0,2021-08-31 13:48:30
-IRC1O,spot,nan,nan,nan,nan,nan,17455.406,nan,nan,nan,nan
-IRC1O,24hs,nan,nan,nan,nan,nan,13310.943,nan,nan,nan,nan
-IRC1O,48hs,nan,nan,nan,nan,nan,17500.0,nan,nan,nan,nan
-IRC5O,spot,nan,nan,nan,nan,nan,5997.153,nan,nan,nan,nan
-IRC5O,24hs,nan,nan,nan,nan,nan,6890.15,nan,nan,nan,nan
-IRC5O,48hs,nan,nan,nan,nan,nan,9579.389,nan,nan,nan,nan
-IRC7O,spot,nan,nan,nan,nan,nan,9775.0,nan,nan,nan,nan
-IRC7O,24hs,nan,nan,nan,nan,nan,8164.388,nan,nan,nan,nan
+HJC7O,24hs,,,,,,,,,,
+HJC7O,48hs,18130.0,,18130.0,18130.0,18130.0,,1994300.0,11000.0,1.0,2021-08-31 13:40:12
+IRC1D,spot,,,,,,101.479,,,,
+IRC1D,24hs,,,,,,87.603,,,,
+IRC1D,48hs,105.0,,105.0,105.0,105.0,105.0,840.0,800.0,1.0,2021-08-31 13:48:30
+IRC1O,spot,,,,,,17455.406,,,,
+IRC1O,24hs,,,,,,13310.943,,,,
+IRC1O,48hs,,,,,,17500.0,,,,
+IRC5O,spot,,,,,,5997.153,,,,
+IRC5O,24hs,,,,,,6890.15,,,,
+IRC5O,48hs,,,,,,9579.389,,,,
+IRC7O,spot,,,,,,9775.0,,,,
+IRC7O,24hs,,,,,,8164.388,,,,
 IRC7O,48hs,9880.0,0.25,9880.0,9880.0,9880.0,9855.0,99.0,1.0,1.0,2021-08-31 15:16:10
-IRC8D,spot,nan,nan,nan,nan,nan,102.479,nan,nan,nan,nan
-IRC8D,24hs,nan,nan,nan,nan,nan,96.791,nan,nan,nan,nan
+IRC8D,spot,,,,,,102.479,,,,
+IRC8D,24hs,,,,,,96.791,,,,
 IRC8D,48hs,107.5,0.93,106.0,107.5,106.0,106.5,8219.0,7710.0,9.0,2021-08-31 15:00:24
-IRC8O,spot,nan,nan,nan,nan,nan,18000.0,nan,nan,nan,nan
-IRC8O,24hs,nan,nan,nan,nan,nan,13826.396,nan,nan,nan,nan
-IRC8O,48hs,18330.0,0.1,18460.0,18460.0,18330.0,18310.0,556669.0,3031.0,11.0,2021-08-31 15:32:26
-IRC9D,spot,nan,nan,nan,nan,nan,107.0,nan,nan,nan,nan
-IRC9D,24hs,nan,nan,nan,nan,nan,104.65,nan,nan,nan,nan
-IRC9D,48hs,105.9,nan,105.9,106.5,105.9,105.9,27420.0,25856.0,21.0,2021-08-31 15:25:59
+IRC8O,spot,,,,,,18000.0,,,,
+IRC8O,24hs,,,,,,13826.396,,,,
+IRC8O,48hs,18400.0,0.49,18460.0,18460.0,18330.0,18310.0,612421.0,3334.0,12.0,2021-08-31 16:18:05
+IRC9D,spot,,,,,,107.0,,,,
+IRC9D,24hs,,,,,,104.65,,,,
+IRC9D,48hs,105.75,-0.14,105.9,106.5,105.75,105.9,27670.0,26093.0,23.0,2021-08-31 16:03:14
 IRC9O,spot,18100.0,-0.44,18090.0,18100.0,18090.0,18180.0,119096.0,658.0,4.0,2021-08-31 15:32:50
-IRC9O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRC9O,48hs,18100.0,0.05,18090.0,18100.0,17902.0,18090.0,1631386.0,9027.0,48.0,2021-08-31 15:58:17
-IRCEC,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCEC,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCEC,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCED,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCED,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCED,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCEO,spot,nan,nan,nan,nan,nan,9731.5,nan,nan,nan,nan
-IRCEO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-IRCEO,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-JHCGD,spot,nan,nan,nan,nan,nan,98.93,nan,nan,nan,nan
-JHCGD,24hs,nan,nan,nan,nan,nan,96.88,nan,nan,nan,nan
-JHCGD,48hs,100.5,nan,100.5,100.5,100.5,100.5,62310.0,62000.0,1.0,2021-08-31 15:19:06
-LMS1C,spot,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-LMS1C,24hs,nan,nan,nan,nan,nan,93.5,nan,nan,nan,nan
-LMS1C,48hs,nan,nan,nan,nan,nan,96.15,nan,nan,nan,nan
-LMS1D,spot,nan,nan,nan,nan,nan,101.6,nan,nan,nan,nan
-LMS1D,24hs,nan,nan,nan,nan,nan,101.0,nan,nan,nan,nan
-LMS1D,48hs,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-LMS1O,spot,nan,nan,nan,nan,nan,16800.0,nan,nan,nan,nan
-LMS1O,24hs,nan,nan,nan,nan,nan,17600.0,nan,nan,nan,nan
+IRC9O,24hs,,,,,,,,,,
+IRC9O,48hs,18100.0,0.05,18090.0,18100.0,17902.0,18090.0,1701976.0,9417.0,49.0,2021-08-31 16:00:43
+IRCEC,spot,,,,,,,,,,
+IRCEC,24hs,,,,,,,,,,
+IRCEC,48hs,,,,,,,,,,
+IRCED,spot,,,,,,,,,,
+IRCED,24hs,,,,,,,,,,
+IRCED,48hs,,,,,,,,,,
+IRCEO,spot,,,,,,9731.5,,,,
+IRCEO,24hs,,,,,,,,,,
+IRCEO,48hs,,,,,,,,,,
+JHCGD,spot,,,,,,98.93,,,,
+JHCGD,24hs,,,,,,96.88,,,,
+JHCGD,48hs,100.5,,100.5,100.5,100.5,100.5,62310.0,62000.0,1.0,2021-08-31 15:19:06
+LMS1C,spot,,,,,,100.0,,,,
+LMS1C,24hs,,,,,,93.5,,,,
+LMS1C,48hs,,,,,,96.15,,,,
+LMS1D,spot,,,,,,101.6,,,,
+LMS1D,24hs,,,,,,101.0,,,,
+LMS1D,48hs,,,,,,100.0,,,,
+LMS1O,spot,,,,,,16800.0,,,,
+LMS1O,24hs,,,,,,17600.0,,,,
 LMS1O,48hs,16500.0,-4.06,16500.0,16500.0,16500.0,17200.0,8250000.0,50000.0,6.0,2021-08-31 15:46:50
-MRC4O,spot,nan,nan,nan,nan,nan,13060.0,nan,nan,nan,nan
-MRC4O,24hs,nan,nan,nan,nan,nan,13288.862,nan,nan,nan,nan
-MRC4O,48hs,nan,nan,nan,nan,nan,12339.097,nan,nan,nan,nan
-MSS8O,spot,nan,nan,nan,nan,nan,8668.0,nan,nan,nan,nan
-MSS8O,48hs,nan,nan,nan,nan,nan,8700.0,nan,nan,nan,nan
-MSS9C,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9C,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9D,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9D,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9D,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MSS9O,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCGD,spot,nan,nan,nan,nan,nan,105.0,nan,nan,nan,nan
-MTCGD,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCGD,48hs,105.0,-0.94,107.5,107.5,104.5,106.0,7425.0,7001.0,15.0,2021-08-31 15:50:45
-MTCGO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCGO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCGO,48hs,18200.0,nan,18200.0,18310.0,18200.0,18200.0,58514.0,321.0,5.0,2021-08-31 15:50:39
-MTCHO,spot,nan,nan,nan,nan,nan,9549.5,nan,nan,nan,nan
-MTCHO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCHO,48hs,nan,nan,nan,nan,nan,11000.0,nan,nan,nan,nan
-MTCIO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCIO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MTCIO,48hs,nan,nan,nan,nan,nan,8125.0,nan,nan,nan,nan
-MXC1O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MXC1O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-MXC1O,48hs,nan,nan,nan,nan,nan,80.0,nan,nan,nan,nan
-NLC9C,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9C,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9D,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9D,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9D,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-NLC9O,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-PDNY9,spot,nan,nan,nan,nan,nan,91.0,nan,nan,nan,nan
-PDNY9,24hs,nan,nan,nan,nan,nan,67.775,nan,nan,nan,nan
-PDNY9,48hs,nan,nan,nan,nan,nan,86.0,nan,nan,nan,nan
-PN4CO,spot,nan,nan,nan,nan,nan,9770.0,nan,nan,nan,nan
-PN4CO,24hs,nan,nan,nan,nan,nan,8290.0,nan,nan,nan,nan
-PN4CO,48hs,nan,nan,nan,nan,nan,9534.5,nan,nan,nan,nan
-PNCEO,spot,nan,nan,nan,nan,nan,7178.5,nan,nan,nan,nan
-PNCEO,24hs,nan,nan,nan,nan,nan,7337.0,nan,nan,nan,nan
+MRC4O,spot,,,,,,13060.0,,,,
+MRC4O,24hs,,,,,,13288.862,,,,
+MRC4O,48hs,,,,,,12339.097,,,,
+MSS8O,spot,,,,,,8668.0,,,,
+MSS8O,48hs,,,,,,8700.0,,,,
+MSS9C,spot,,,,,,,,,,
+MSS9C,24hs,,,,,,,,,,
+MSS9C,48hs,,,,,,,,,,
+MSS9D,spot,,,,,,,,,,
+MSS9D,24hs,,,,,,,,,,
+MSS9D,48hs,,,,,,,,,,
+MSS9O,spot,,,,,,,,,,
+MSS9O,24hs,,,,,,,,,,
+MSS9O,48hs,,,,,,,,,,
+MTCGD,spot,,,,,,105.0,,,,
+MTCGD,24hs,,,,,,,,,,
+MTCGD,48hs,105.0,-0.94,107.5,107.5,104.5,106.0,7636.0,7202.0,16.0,2021-08-31 16:12:38
+MTCGO,spot,,,,,,,,,,
+MTCGO,24hs,,,,,,,,,,
+MTCGO,48hs,18200.0,,18200.0,18310.0,18200.0,18200.0,58514.0,321.0,5.0,2021-08-31 15:50:39
+MTCHO,spot,,,,,,9549.5,,,,
+MTCHO,24hs,,,,,,,,,,
+MTCHO,48hs,,,,,,11000.0,,,,
+MTCIO,spot,,,,,,,,,,
+MTCIO,24hs,,,,,,,,,,
+MTCIO,48hs,,,,,,8125.0,,,,
+MXC1O,spot,,,,,,,,,,
+MXC1O,24hs,,,,,,,,,,
+MXC1O,48hs,,,,,,80.0,,,,
+NLC9C,spot,,,,,,,,,,
+NLC9C,24hs,,,,,,,,,,
+NLC9C,48hs,,,,,,,,,,
+NLC9D,spot,,,,,,,,,,
+NLC9D,24hs,,,,,,,,,,
+NLC9D,48hs,,,,,,,,,,
+NLC9O,spot,,,,,,,,,,
+NLC9O,24hs,,,,,,,,,,
+NLC9O,48hs,,,,,,,,,,
+PDNY9,spot,,,,,,91.0,,,,
+PDNY9,24hs,,,,,,67.775,,,,
+PDNY9,48hs,,,,,,86.0,,,,
+PN4CO,spot,,,,,,9770.0,,,,
+PN4CO,24hs,,,,,,8290.0,,,,
+PN4CO,48hs,,,,,,9534.5,,,,
+PNCEO,spot,,,,,,7178.5,,,,
+PNCEO,24hs,,,,,,7337.0,,,,
 PNCEO,48hs,9200.0,-1.07,9200.0,9200.0,9200.0,9300.0,11040.0,120.0,1.0,2021-08-31 12:12:00
-PNDCD,spot,nan,nan,nan,nan,nan,119.75,nan,nan,nan,nan
-PNDCD,24hs,nan,nan,nan,nan,nan,119.0,nan,nan,nan,nan
-PNDCD,48hs,nan,nan,nan,nan,nan,118.5,nan,nan,nan,nan
-PNDCO,spot,nan,nan,nan,nan,nan,20570.0,nan,nan,nan,nan
-PNDCO,24hs,nan,nan,nan,nan,nan,16650.0,nan,nan,nan,nan
-PNDCO,48hs,20500.0,nan,20500.0,20500.0,20500.0,20500.0,4510000.0,22000.0,2.0,2021-08-31 15:21:45
-PNECO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-PNECO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-PNECO,48hs,nan,nan,nan,nan,nan,9980.0,nan,nan,nan,nan
-PQC5O,spot,nan,nan,nan,nan,nan,6854.465,nan,nan,nan,nan
-PQC5O,24hs,nan,nan,nan,nan,nan,7681.333,nan,nan,nan,nan
-PQC5O,48hs,nan,nan,nan,nan,nan,9700.0,nan,nan,nan,nan
-PQCAO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-PQCAO,24hs,nan,nan,nan,nan,nan,10100.0,nan,nan,nan,nan
-PQCAO,48hs,nan,nan,nan,nan,nan,9965.0,nan,nan,nan,nan
+PNDCD,spot,,,,,,119.75,,,,
+PNDCD,24hs,,,,,,119.0,,,,
+PNDCD,48hs,,,,,,118.5,,,,
+PNDCO,spot,,,,,,20570.0,,,,
+PNDCO,24hs,,,,,,16650.0,,,,
+PNDCO,48hs,20500.0,,20500.0,20500.0,20500.0,20500.0,4510000.0,22000.0,2.0,2021-08-31 15:21:45
+PNECO,spot,,,,,,,,,,
+PNECO,24hs,,,,,,,,,,
+PNECO,48hs,,,,,,9980.0,,,,
+PQC5O,spot,,,,,,6854.465,,,,
+PQC5O,24hs,,,,,,7681.333,,,,
+PQC5O,48hs,,,,,,9700.0,,,,
+PQCAO,spot,,,,,,,,,,
+PQCAO,24hs,,,,,,10100.0,,,,
+PQCAO,48hs,,,,,,9965.0,,,,
 PQCDD,spot,105.75,2.62,105.75,105.75,105.75,103.05,529.0,500.0,1.0,2021-08-31 15:45:52
-PQCDD,48hs,105.5,-0.23,106.0,106.0,105.5,105.75,2191.0,2075.0,4.0,2021-08-31 15:47:15
-PQCDO,spot,nan,nan,nan,nan,nan,17700.0,nan,nan,nan,nan
+PQCDD,48hs,105.5,-0.23,106.0,106.0,105.5,105.75,3288.0,3115.0,8.0,2021-08-31 16:19:34
+PQCDO,spot,,,,,,17700.0,,,,
 PQCDO,48hs,18050.0,0.27,18200.0,18200.0,17999.0,18000.0,146172.0,809.0,4.0,2021-08-31 14:38:18
-PQCEC,48hs,nan,nan,nan,nan,nan,55.8,nan,nan,nan,nan
-PTSTC,spot,nan,nan,nan,nan,nan,100.5,nan,nan,nan,nan
-PTSTC,24hs,nan,nan,nan,nan,nan,97.75,nan,nan,nan,nan
-PTSTC,48hs,nan,nan,nan,nan,nan,98.4,nan,nan,nan,nan
+PQCEC,48hs,,,,,,55.8,,,,
+PTSTC,spot,,,,,,100.5,,,,
+PTSTC,24hs,,,,,,97.75,,,,
+PTSTC,48hs,,,,,,98.4,,,,
 PTSTD,spot,105.0,1.94,105.0,105.0,105.0,103.0,1050.0,1000.0,1.0,2021-08-31 14:51:43
-PTSTD,24hs,nan,nan,nan,nan,nan,103.5,nan,nan,nan,nan
+PTSTD,24hs,,,,,,103.5,,,,
 PTSTD,48hs,107.5,1.41,105.9,107.5,105.0,106.0,18003.0,17000.0,9.0,2021-08-31 15:04:36
-PTSTO,spot,nan,nan,nan,nan,nan,17742.0,nan,nan,nan,nan
-PTSTO,24hs,nan,nan,nan,nan,nan,17820.0,nan,nan,nan,nan
-PTSTO,48hs,17800.0,nan,17800.0,17850.0,17750.0,17800.0,6778000.0,38000.0,15.0,2021-08-31 15:50:13
-RA31D,spot,nan,nan,nan,nan,nan,98.3,nan,nan,nan,nan
-RA31D,24hs,nan,nan,nan,nan,nan,97.1,nan,nan,nan,nan
-RA31D,48hs,nan,nan,nan,nan,nan,96.0,nan,nan,nan,nan
-RA31O,spot,16416.0,nan,16416.0,16416.0,16416.0,16416.0,2486203.0,15145.0,3.0,2021-08-31 14:15:38
-RA31O,24hs,nan,nan,nan,nan,nan,16099.0,nan,nan,nan,nan
-RA31O,48hs,nan,nan,nan,nan,nan,17204.0,nan,nan,nan,nan
-RAC4D,spot,nan,nan,nan,nan,nan,100.7,nan,nan,nan,nan
-RAC4D,24hs,nan,nan,nan,nan,nan,90.0,nan,nan,nan,nan
-RAC4D,48hs,nan,nan,nan,nan,nan,101.0,nan,nan,nan,nan
-RAC4O,spot,nan,nan,nan,nan,nan,16416.0,nan,nan,nan,nan
-RAC4O,24hs,nan,nan,nan,nan,nan,17400.0,nan,nan,nan,nan
-RAC4O,48hs,nan,nan,nan,nan,nan,17500.0,nan,nan,nan,nan
-RCC9C,spot,nan,nan,nan,nan,nan,99.5,nan,nan,nan,nan
-RCC9C,24hs,nan,nan,nan,nan,nan,94.22,nan,nan,nan,nan
-RCC9C,48hs,nan,nan,nan,nan,nan,100.5,nan,nan,nan,nan
+PTSTO,spot,,,,,,17742.0,,,,
+PTSTO,24hs,,,,,,17820.0,,,,
+PTSTO,48hs,17900.0,0.56,17800.0,17900.0,17750.0,17800.0,8922000.0,50000.0,19.0,2021-08-31 16:16:43
+RA31D,spot,,,,,,98.3,,,,
+RA31D,24hs,,,,,,97.1,,,,
+RA31D,48hs,,,,,,96.0,,,,
+RA31O,spot,16416.0,,16416.0,16416.0,16416.0,16416.0,2486203.0,15145.0,3.0,2021-08-31 14:15:38
+RA31O,24hs,,,,,,16099.0,,,,
+RA31O,48hs,,,,,,17204.0,,,,
+RAC4D,spot,,,,,,100.7,,,,
+RAC4D,24hs,,,,,,90.0,,,,
+RAC4D,48hs,,,,,,101.0,,,,
+RAC4O,spot,,,,,,16416.0,,,,
+RAC4O,24hs,,,,,,17400.0,,,,
+RAC4O,48hs,,,,,,17500.0,,,,
+RCC9C,spot,,,,,,99.5,,,,
+RCC9C,24hs,,,,,,94.22,,,,
+RCC9C,48hs,,,,,,100.5,,,,
 RCC9D,spot,105.9,1.58,105.9,105.9,105.9,104.25,14826.0,14000.0,1.0,2021-08-31 11:36:20
-RCC9D,24hs,nan,nan,nan,nan,nan,107.95,nan,nan,nan,nan
-RCC9D,48hs,105.0,nan,105.0,105.0,105.0,105.0,13650.0,13000.0,1.0,2021-08-31 12:05:58
+RCC9D,24hs,,,,,,107.95,,,,
+RCC9D,48hs,105.0,,105.0,105.0,105.0,105.0,13650.0,13000.0,1.0,2021-08-31 12:05:58
 RCC9O,spot,18003.0,0.01,18003.0,18003.0,18003.0,18000.0,2520420.0,14000.0,1.0,2021-08-31 11:37:08
-RCC9O,24hs,nan,nan,nan,nan,nan,17900.0,nan,nan,nan,nan
-RCC9O,48hs,17895.0,-0.3,17980.0,17980.0,17800.0,17950.0,9809150.0,55000.0,10.0,2021-08-31 15:32:50
-RFCAC,spot,100.0,nan,100.0,100.0,100.0,100.0,11906.0,11906.0,6.0,2021-08-31 15:34:27
-RFCAC,24hs,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-RFCAC,48hs,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
+RCC9O,24hs,,,,,,17900.0,,,,
+RCC9O,48hs,17925.0,-0.13,17980.0,17980.0,17800.0,17950.0,15186350.0,85000.0,12.0,2021-08-31 16:01:04
+RFCAC,spot,100.0,,100.0,100.0,100.0,100.0,11906.0,11906.0,6.0,2021-08-31 15:34:27
+RFCAC,24hs,,,,,,100.0,,,,
+RFCAC,48hs,,,,,,100.0,,,,
 RFCAD,spot,103.0,0.98,102.0,103.0,102.0,102.0,238446.0,231944.0,4.0,2021-08-31 15:01:22
-RFCAD,24hs,nan,nan,nan,nan,nan,104.0,nan,nan,nan,nan
-RFCAD,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+RFCAD,24hs,,,,,,104.0,,,,
+RFCAD,48hs,,,,,,,,,,
 RFCAO,spot,17460.0,-1.73,17315.0,17735.0,17315.0,17768.5,13757871.0,78625.0,12.0,2021-08-31 15:34:43
-RFCAO,24hs,nan,nan,nan,nan,nan,17422.0,nan,nan,nan,nan
-RFCAO,48hs,nan,nan,nan,nan,nan,17420.0,nan,nan,nan,nan
-RPC2D,spot,105.45,nan,105.45,105.45,105.45,105.45,1055.0,1000.0,1.0,2021-08-31 14:08:05
-RPC2D,24hs,nan,nan,nan,nan,nan,106.0,nan,nan,nan,nan
-RPC2D,48hs,105.05,0.52,105.5,106.0,105.0,104.5,24235.0,23000.0,20.0,2021-08-31 15:06:24
-RPC2O,spot,nan,nan,nan,nan,nan,17700.0,nan,nan,nan,nan
-RPC2O,24hs,nan,nan,nan,nan,nan,17510.0,nan,nan,nan,nan
-RPC2O,48hs,17601.0,-1.11,17560.5,18000.0,17560.5,17800.0,5646968.0,31500.0,26.0,2021-08-31 15:41:04
-RZS3O,spot,nan,nan,nan,nan,nan,9136.723,nan,nan,nan,nan
-RZS3O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-RZS3O,48hs,nan,nan,nan,nan,nan,9430.0,nan,nan,nan,nan
-SN5AO,spot,nan,nan,nan,nan,nan,9171.0,nan,nan,nan,nan
-SN5AO,24hs,nan,nan,nan,nan,nan,8766.0,nan,nan,nan,nan
-SN5AO,48hs,nan,nan,nan,nan,nan,9700.0,nan,nan,nan,nan
-SNS4D,spot,nan,nan,nan,nan,nan,57.07,nan,nan,nan,nan
-SNS4D,24hs,nan,nan,nan,nan,nan,58.0,nan,nan,nan,nan
-SNS4D,48hs,nan,nan,nan,nan,nan,57.15,nan,nan,nan,nan
+RFCAO,24hs,,,,,,17422.0,,,,
+RFCAO,48hs,,,,,,17420.0,,,,
+RPC2D,spot,105.45,,105.45,105.45,105.45,105.45,1055.0,1000.0,1.0,2021-08-31 14:08:05
+RPC2D,24hs,,,,,,106.0,,,,
+RPC2D,48hs,105.05,0.52,105.5,106.0,105.0,104.5,25810.0,24500.0,22.0,2021-08-31 16:12:32
+RPC2O,spot,,,,,,17700.0,,,,
+RPC2O,24hs,,,,,,17510.0,,,,
+RPC2O,48hs,17875.0,0.42,17560.5,18000.0,17560.5,17800.0,6449293.0,36000.0,30.0,2021-08-31 16:15:49
+RZS3O,spot,,,,,,9136.723,,,,
+RZS3O,24hs,,,,,,,,,,
+RZS3O,48hs,,,,,,9430.0,,,,
+SN5AO,spot,,,,,,9171.0,,,,
+SN5AO,24hs,,,,,,8766.0,,,,
+SN5AO,48hs,,,,,,9700.0,,,,
+SNS4D,spot,,,,,,57.07,,,,
+SNS4D,24hs,,,,,,58.0,,,,
+SNS4D,48hs,,,,,,57.15,,,,
 SNS4O,spot,9802.0,0.06,9802.0,9802.0,9802.0,9796.0,49598.0,506.0,1.0,2021-08-31 14:20:52
-SNS4O,24hs,nan,nan,nan,nan,nan,9651.0,nan,nan,nan,nan
+SNS4O,24hs,,,,,,9651.0,,,,
 SNS4O,48hs,9650.0,-0.1,9650.0,9650.0,9650.0,9660.0,772.0,8.0,1.0,2021-08-31 11:45:24
-STC5C,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5C,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5D,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5D,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5D,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-STC5O,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-SV6MO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-SV6MO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-SV6MO,48hs,nan,nan,nan,nan,nan,7600.0,nan,nan,nan,nan
-T491O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-T491O,24hs,nan,nan,nan,nan,nan,101.05,nan,nan,nan,nan
-T491O,48hs,nan,nan,nan,nan,nan,101.5,nan,nan,nan,nan
-TLC1D,spot,nan,nan,nan,nan,nan,104.0,nan,nan,nan,nan
-TLC1D,24hs,nan,nan,nan,nan,nan,102.0,nan,nan,nan,nan
-TLC1D,48hs,nan,nan,nan,nan,nan,103.5,nan,nan,nan,nan
-TLC1O,spot,nan,nan,nan,nan,nan,17087.12,nan,nan,nan,nan
-TLC1O,48hs,nan,nan,nan,nan,nan,17500.0,nan,nan,nan,nan
-TLC5D,spot,nan,nan,nan,nan,nan,102.85,nan,nan,nan,nan
-TLC5D,24hs,nan,nan,nan,nan,nan,105.0,nan,nan,nan,nan
-TLC5D,48hs,105.0,nan,105.0,105.0,105.0,105.0,2100.0,2000.0,1.0,2021-08-31 11:44:44
-TLC5O,spot,nan,nan,nan,nan,nan,17700.0,nan,nan,nan,nan
-TLC5O,24hs,nan,nan,nan,nan,nan,17759.5,nan,nan,nan,nan
-TLC5O,48hs,17900.0,nan,17900.0,17900.0,17900.0,17900.0,2148000.0,12000.0,1.0,2021-08-31 12:30:08
-TLC7O,spot,nan,nan,nan,nan,nan,6624.841,nan,nan,nan,nan
-TLC7O,24hs,nan,nan,nan,nan,nan,8688.0,nan,nan,nan,nan
-TLC7O,48hs,nan,nan,nan,nan,nan,8620.0,nan,nan,nan,nan
-TN45O,spot,nan,nan,nan,nan,nan,96.845,nan,nan,nan,nan
-TN45O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TN45O,48hs,nan,nan,nan,nan,nan,107.0,nan,nan,nan,nan
-TN47D,spot,nan,nan,nan,nan,nan,97.533,nan,nan,nan,nan
-TN47D,24hs,nan,nan,nan,nan,nan,97.283,nan,nan,nan,nan
-TN47D,48hs,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-TSS2C,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2C,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2D,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2D,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2D,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2P,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2P,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TSS2P,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-TTC1C,spot,nan,nan,nan,nan,nan,100.1,nan,nan,nan,nan
-TTC1C,24hs,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-TTC1C,48hs,nan,nan,nan,nan,nan,101.5,nan,nan,nan,nan
-TTC1D,spot,nan,nan,nan,nan,nan,104.45,nan,nan,nan,nan
-TTC1D,24hs,nan,nan,nan,nan,nan,101.0,nan,nan,nan,nan
-TTC1D,48hs,nan,nan,nan,nan,nan,103.0,nan,nan,nan,nan
-TTC1O,spot,17700.0,nan,17700.0,17700.0,17700.0,17700.0,354000.0,2000.0,2.0,2021-08-31 12:04:24
-TTC1O,24hs,nan,nan,nan,nan,nan,17730.0,nan,nan,nan,nan
+STC5C,spot,,,,,,,,,,
+STC5C,24hs,,,,,,,,,,
+STC5C,48hs,,,,,,,,,,
+STC5D,spot,,,,,,,,,,
+STC5D,24hs,,,,,,,,,,
+STC5D,48hs,,,,,,,,,,
+STC5O,spot,,,,,,,,,,
+STC5O,24hs,,,,,,,,,,
+STC5O,48hs,,,,,,,,,,
+SV6MO,spot,,,,,,,,,,
+SV6MO,24hs,,,,,,,,,,
+SV6MO,48hs,,,,,,7600.0,,,,
+T491O,spot,,,,,,,,,,
+T491O,24hs,,,,,,101.05,,,,
+T491O,48hs,,,,,,101.5,,,,
+TLC1D,spot,,,,,,104.0,,,,
+TLC1D,24hs,,,,,,102.0,,,,
+TLC1D,48hs,,,,,,103.5,,,,
+TLC1O,spot,,,,,,17087.12,,,,
+TLC1O,48hs,,,,,,17500.0,,,,
+TLC5D,spot,,,,,,102.85,,,,
+TLC5D,24hs,,,,,,105.0,,,,
+TLC5D,48hs,105.0,,105.0,105.0,105.0,105.0,2100.0,2000.0,1.0,2021-08-31 11:44:44
+TLC5O,spot,,,,,,17700.0,,,,
+TLC5O,24hs,,,,,,17759.5,,,,
+TLC5O,48hs,17900.0,,17900.0,17900.0,17900.0,17900.0,2148000.0,12000.0,1.0,2021-08-31 12:30:08
+TLC7O,spot,,,,,,6624.841,,,,
+TLC7O,24hs,,,,,,8688.0,,,,
+TLC7O,48hs,,,,,,8620.0,,,,
+TN45O,spot,,,,,,96.845,,,,
+TN45O,24hs,,,,,,,,,,
+TN45O,48hs,,,,,,107.0,,,,
+TN47D,spot,,,,,,97.533,,,,
+TN47D,24hs,,,,,,97.283,,,,
+TN47D,48hs,,,,,,100.0,,,,
+TSS2C,spot,,,,,,,,,,
+TSS2C,24hs,,,,,,,,,,
+TSS2C,48hs,,,,,,,,,,
+TSS2D,spot,,,,,,,,,,
+TSS2D,24hs,,,,,,,,,,
+TSS2D,48hs,,,,,,,,,,
+TSS2P,spot,,,,,,,,,,
+TSS2P,24hs,,,,,,,,,,
+TSS2P,48hs,,,,,,,,,,
+TTC1C,spot,,,,,,100.1,,,,
+TTC1C,24hs,,,,,,100.0,,,,
+TTC1C,48hs,,,,,,101.5,,,,
+TTC1D,spot,,,,,,104.45,,,,
+TTC1D,24hs,,,,,,101.0,,,,
+TTC1D,48hs,,,,,,103.0,,,,
+TTC1O,spot,17700.0,,17700.0,17700.0,17700.0,17700.0,354000.0,2000.0,2.0,2021-08-31 12:04:24
+TTC1O,24hs,,,,,,17730.0,,,,
 TTC1O,48hs,17900.0,0.84,17800.0,17900.0,17800.0,17750.0,3386500.0,19000.0,3.0,2021-08-31 15:19:14
-TTC4D,spot,nan,nan,nan,nan,nan,100.242,nan,nan,nan,nan
-TTC4D,24hs,nan,nan,nan,nan,nan,96.992,nan,nan,nan,nan
-TTC4D,48hs,nan,nan,nan,nan,nan,99.45,nan,nan,nan,nan
-TTC4O,spot,nan,nan,nan,nan,nan,16850.0,nan,nan,nan,nan
-TTC4O,24hs,nan,nan,nan,nan,nan,17237.0,nan,nan,nan,nan
-TTC4O,48hs,nan,nan,nan,nan,nan,17000.0,nan,nan,nan,nan
-VSC2C,spot,nan,nan,nan,nan,nan,102.5,nan,nan,nan,nan
-VSC2C,24hs,nan,nan,nan,nan,nan,93.65,nan,nan,nan,nan
-VSC2C,48hs,nan,nan,nan,nan,nan,101.06,nan,nan,nan,nan
-VSC2D,spot,nan,nan,nan,nan,nan,104.0,nan,nan,nan,nan
-VSC2D,24hs,nan,nan,nan,nan,nan,104.36,nan,nan,nan,nan
-VSC2D,48hs,105.0,nan,105.0,105.0,105.0,105.0,10185.0,9700.0,6.0,2021-08-31 11:39:38
-VSC2O,spot,nan,nan,nan,nan,nan,17117.5,nan,nan,nan,nan
-VSC2O,24hs,nan,nan,nan,nan,nan,17800.0,nan,nan,nan,nan
+TTC4D,spot,,,,,,100.242,,,,
+TTC4D,24hs,,,,,,96.992,,,,
+TTC4D,48hs,,,,,,99.45,,,,
+TTC4O,spot,,,,,,16850.0,,,,
+TTC4O,24hs,,,,,,17237.0,,,,
+TTC4O,48hs,,,,,,17000.0,,,,
+VSC2C,spot,,,,,,102.5,,,,
+VSC2C,24hs,,,,,,93.65,,,,
+VSC2C,48hs,,,,,,101.06,,,,
+VSC2D,spot,,,,,,104.0,,,,
+VSC2D,24hs,,,,,,104.36,,,,
+VSC2D,48hs,105.0,,105.0,105.0,105.0,105.0,10185.0,9700.0,6.0,2021-08-31 11:39:38
+VSC2O,spot,,,,,,17117.5,,,,
+VSC2O,24hs,,,,,,17800.0,,,,
 VSC2O,48hs,18000.0,-1.28,18250.0,18250.0,18000.0,18235.0,2106861.0,11650.0,8.0,2021-08-31 12:17:16
-VSC3D,spot,nan,nan,nan,nan,nan,100.0,nan,nan,nan,nan
-VSC3D,24hs,nan,nan,nan,nan,nan,97.76,nan,nan,nan,nan
-VSC3D,48hs,98.0,-1.01,98.0,98.0,98.0,99.0,1005.0,1026.0,2.0,2021-08-31 13:43:13
-VSC3O,spot,nan,nan,nan,nan,nan,17150.0,nan,nan,nan,nan
-VSC3O,24hs,nan,nan,nan,nan,nan,16294.733,nan,nan,nan,nan
-VSC3O,48hs,17105.0,0.02,17101.0,17300.0,17101.0,17101.0,382727.0,2215.0,12.0,2021-08-31 15:56:19
-VSC8O,spot,nan,nan,nan,nan,nan,7145.928,nan,nan,nan,nan
-VSC8O,24hs,nan,nan,nan,nan,nan,7755.928,nan,nan,nan,nan
-VSC8O,48hs,nan,nan,nan,nan,nan,8250.0,nan,nan,nan,nan
-VSCAO,spot,nan,nan,nan,nan,nan,7953.5,nan,nan,nan,nan
-VSCAO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-VSCAO,48hs,nan,nan,nan,nan,nan,8500.0,nan,nan,nan,nan
-VSCBD,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-VSCBO,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-VSCBO,24hs,nan,nan,nan,nan,nan,9743.0,nan,nan,nan,nan
-VSCBO,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-VSCDC,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-VSCDO,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9C,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9C,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9C,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9D,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9D,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9D,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9O,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9O,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-WNC9O,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YCA6C,spot,nan,nan,nan,nan,nan,89.1,nan,nan,nan,nan
-YCA6C,24hs,nan,nan,nan,nan,nan,82.75,nan,nan,nan,nan
-YCA6C,48hs,nan,nan,nan,nan,nan,82.0,nan,nan,nan,nan
-YCA6O,spot,nan,nan,nan,nan,nan,15593.0,nan,nan,nan,nan
-YCA6O,24hs,nan,nan,nan,nan,nan,10469.87,nan,nan,nan,nan
-YCA6O,48hs,15800.0,1.6,15600.0,15800.0,15600.0,15550.0,1095000.0,7000.0,4.0,2021-08-31 15:07:29
-YCA6P,spot,nan,nan,nan,nan,nan,87.0,nan,nan,nan,nan
-YCA6P,24hs,nan,nan,nan,nan,nan,91.0,nan,nan,nan,nan
+VSC3D,spot,,,,,,100.0,,,,
+VSC3D,24hs,,,,,,97.76,,,,
+VSC3D,48hs,100.0,1.01,98.0,100.0,98.0,99.0,1512.0,1533.0,4.0,2021-08-31 16:20:02
+VSC3O,spot,,,,,,17150.0,,,,
+VSC3O,24hs,,,,,,16294.733,,,,
+VSC3O,48hs,17105.0,0.02,17101.0,17300.0,17101.0,17101.0,1494755.0,8708.0,17.0,2021-08-31 16:02:54
+VSC8O,spot,,,,,,7145.928,,,,
+VSC8O,24hs,,,,,,7755.928,,,,
+VSC8O,48hs,,,,,,8250.0,,,,
+VSCAO,spot,,,,,,7953.5,,,,
+VSCAO,24hs,,,,,,,,,,
+VSCAO,48hs,,,,,,8500.0,,,,
+VSCBD,48hs,,,,,,,,,,
+VSCBO,spot,,,,,,,,,,
+VSCBO,24hs,,,,,,9743.0,,,,
+VSCBO,48hs,,,,,,,,,,
+VSCDC,48hs,,,,,,,,,,
+VSCDO,48hs,,,,,,,,,,
+WNC9C,spot,,,,,,,,,,
+WNC9C,24hs,,,,,,,,,,
+WNC9C,48hs,,,,,,,,,,
+WNC9D,spot,,,,,,,,,,
+WNC9D,24hs,,,,,,,,,,
+WNC9D,48hs,,,,,,,,,,
+WNC9O,spot,,,,,,,,,,
+WNC9O,24hs,,,,,,,,,,
+WNC9O,48hs,,,,,,,,,,
+YCA6C,spot,,,,,,89.1,,,,
+YCA6C,24hs,,,,,,82.75,,,,
+YCA6C,48hs,,,,,,82.0,,,,
+YCA6O,spot,,,,,,15593.0,,,,
+YCA6O,24hs,,,,,,10469.87,,,,
+YCA6O,48hs,15999.0,2.88,15600.0,15999.0,15600.0,15550.0,1254990.0,8000.0,5.0,2021-08-31 16:07:52
+YCA6P,spot,,,,,,87.0,,,,
+YCA6P,24hs,,,,,,91.0,,,,
 YCA6P,48hs,93.5,3.31,91.5,93.5,91.5,90.5,23138.0,25000.0,11.0,2021-08-31 15:46:21
-YMCBO,spot,nan,nan,nan,nan,nan,7950.0,nan,nan,nan,nan
-YMCBO,24hs,nan,nan,nan,nan,nan,7887.0,nan,nan,nan,nan
-YMCBO,48hs,nan,nan,nan,nan,nan,9622.5,nan,nan,nan,nan
-YMCHC,spot,nan,nan,nan,nan,nan,85.55,nan,nan,nan,nan
-YMCHC,24hs,nan,nan,nan,nan,nan,92.0,nan,nan,nan,nan
-YMCHC,48hs,nan,nan,nan,nan,nan,92.0,nan,nan,nan,nan
-YMCHD,spot,nan,nan,nan,nan,nan,90.5,nan,nan,nan,nan
-YMCHD,24hs,nan,nan,nan,nan,nan,94.76,nan,nan,nan,nan
-YMCHD,48hs,nan,nan,nan,nan,nan,90.0,nan,nan,nan,nan
-YMCHO,spot,nan,nan,nan,nan,nan,15402.96,nan,nan,nan,nan
-YMCHO,24hs,nan,nan,nan,nan,nan,11909.04,nan,nan,nan,nan
+YMCBO,spot,,,,,,7950.0,,,,
+YMCBO,24hs,,,,,,7887.0,,,,
+YMCBO,48hs,,,,,,9622.5,,,,
+YMCHC,spot,,,,,,85.55,,,,
+YMCHC,24hs,,,,,,92.0,,,,
+YMCHC,48hs,,,,,,92.0,,,,
+YMCHD,spot,,,,,,90.5,,,,
+YMCHD,24hs,,,,,,94.76,,,,
+YMCHD,48hs,,,,,,90.0,,,,
+YMCHO,spot,,,,,,15402.96,,,,
+YMCHO,24hs,,,,,,11909.04,,,,
 YMCHO,48hs,16200.0,1.25,16200.0,16200.0,16200.0,16000.0,101574.0,627.0,3.0,2021-08-31 15:43:08
-YMCIC,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCIC,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCIC,48hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCID,spot,nan,nan,nan,nan,nan,71.0,nan,nan,nan,nan
-YMCID,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCID,48hs,nan,nan,nan,nan,nan,72.0,nan,nan,nan,nan
-YMCIO,spot,nan,nan,nan,nan,nan,12100.0,nan,nan,nan,nan
-YMCIO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCIO,48hs,12250.0,nan,12250.0,12250.0,12250.0,12250.0,79625.0,650.0,1.0,2021-08-31 15:34:55
-YMCJD,spot,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCJD,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCJD,48hs,nan,nan,nan,nan,nan,55.0,nan,nan,nan,nan
-YMCJO,spot,nan,nan,nan,nan,nan,9807.0,nan,nan,nan,nan
-YMCJO,24hs,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-YMCJO,48hs,10450.0,nan,10300.0,10450.0,10300.0,10450.0,73040.0,701.0,4.0,2021-08-31 15:26:18
+YMCIC,spot,,,,,,,,,,
+YMCIC,24hs,,,,,,,,,,
+YMCIC,48hs,,,,,,,,,,
+YMCID,spot,,,,,,71.0,,,,
+YMCID,24hs,,,,,,,,,,
+YMCID,48hs,,,,,,72.0,,,,
+YMCIO,spot,,,,,,12100.0,,,,
+YMCIO,24hs,,,,,,,,,,
+YMCIO,48hs,12490.0,1.95,12250.0,12490.0,12250.0,12250.0,643835.0,5176.0,5.0,2021-08-31 16:19:39
+YMCJD,spot,,,,,,,,,,
+YMCJD,24hs,,,,,,,,,,
+YMCJD,48hs,,,,,,55.0,,,,
+YMCJO,spot,,,,,,9807.0,,,,
+YMCJO,24hs,,,,,,,,,,
+YMCJO,48hs,10450.0,,10300.0,10450.0,10300.0,10450.0,73040.0,701.0,4.0,2021-08-31 15:26:18
 YPCUD,spot,99.5,1.53,99.5,99.5,99.5,98.0,13930.0,14000.0,1.0,2021-08-31 14:43:35
-YPCUD,24hs,nan,nan,nan,nan,nan,96.84,nan,nan,nan,nan
-YPCUD,48hs,100.0,nan,100.0,100.0,100.0,100.0,148000.0,148000.0,25.0,2021-08-31 15:45:15
+YPCUD,24hs,,,,,,96.84,,,,
+YPCUD,48hs,100.0,,100.0,100.0,100.0,100.0,148000.0,148000.0,25.0,2021-08-31 15:45:15
 YPCUO,spot,16965.0,3.09,16965.0,16965.0,16965.0,16455.0,2375100.0,14000.0,1.0,2021-08-31 14:44:24
-YPCUO,24hs,nan,nan,nan,nan,nan,16500.0,nan,nan,nan,nan
+YPCUO,24hs,,,,,,16500.0,,,,
 YPCUO,48hs,17050.0,0.58,17050.0,17050.0,17050.0,16950.0,170500.0,1000.0,1.0,2021-08-31 15:07:59
