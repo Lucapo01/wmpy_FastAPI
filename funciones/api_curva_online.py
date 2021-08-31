@@ -60,7 +60,7 @@ def main():
         # except Exception as e:
         #        print("Error creating CSV: ", e)
         # finally:
-        #         return government_bonds, corporate_bonds
+        return government_bonds, corporate_bonds
 
 
 #pandas.set_option('display.max_rows', None)
@@ -68,4 +68,3 @@ def main():
 # print(government_bonds)
 # print("---------------------------------------------------------------------")
 # print(corporate_bonds)
-main()
