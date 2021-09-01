@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <link rel="icon" type="image/png" href="{% static "/img/favicon.ico" %}">
+    <title>BAVSA</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/floating-labels/">
+    <!-- Bootstrap core CSS -->
+    <link href="static/librerias/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Personalizado -->
+    <link href="static/css/login.css" rel="stylesheet">
+</head>
+<body>
+<form class="form-signin2">
+    
+    <div class="text-center mb-4">
+        <img class="mb-4" src="/img/logo.png" alt="">
+        <h1 class="h3 mb-3 font-weight-normal" style="color:white">Ingreso</h1>
+    </div>
+
+    <div class="form-label-group">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputEmail">Email o ID de Cliente</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">Contraseña</label>
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="alertalog" style="display:none;">
+        <span id="txt_error"></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="checkbox mb-3" style="margin-left: 15%">
+        <a style="color: white" href="/signup/"><code style="color:#6fadf1">Para registrarte hace click </code> aca!
+        </a>
+        <br/>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" id="btnForm">Acceder</button>
+    <a style="font-size: 14px; margin-left: 29%" href="/password_reset"><code style="color:#6fadf1">Olvidaste tu
+        contraseña?</code></a>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2020-2020</p>
+</form>
+</body>
+<script src="static/librerias/jquery/jquery.min.js"></script>
+<script src="static/librerias/bootstrap/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lf56CMcAAAAADkfdcG1Ot7gVgrZ7WJn05DiL85Z"></script>
+
+<script>
+
+    $(document).ready(() => {
+        $(".close").click(function () {
+            $("#alertalog").css("display", "none");
+        });
+    });
+
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+
+    btnForm.onclick = function(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfysSMcAAAAACNJtq1VadYj44qLO_Z2sHV88fEN', {action: 'submit'}).then(function(token) {
+                // Add your logic to submit to your backend server here.
+                console.log('aaacaaaaaaaaaaaa');
+                logearse(e);
+            });
+        });
+    }
+
+    function logearse(event) {
+        if(event) event.preventDefault();
+        let user_name = $('#inputEmail').val()
+        let user_password = $('#inputPassword').val()
+        let csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+        let data = {
+            'email': user_name,
+            'password': user_password
+        }
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        $.ajax({
+            type: 'POST',
+            url: window.location.origin + "/login",
+            data: JSON.stringify(data),
+            success: (response) => {
+                window.location.href = "/panel/";
+            },
+            error: (e) => {
+                $('#txt_error').text(e.responseJSON.message)
+                $("#alertalog").css("display", "block");
+            }
+        });
+    }
+</script>
+</html>

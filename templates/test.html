@@ -1,0 +1,75 @@
+{% load static %}
+{% load l10n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="cant" id="cant" placeholder="cantidad">
+        <label for="cant">Cantidad</label>
+        <button type="submit" id="btnForm">comprar</button>
+    </form>
+</body>
+<script src="{% static "/librerias/jquery/jquery.min.js" %}"></script>
+<script>
+    $('#btnForm').click((event) => {
+        event.preventDefault();
+        let cant = $('#cant').val()
+        let csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+        /*let data = {
+            'cant': cant,
+        }*/
+        let data = {
+	        status: "orden aceptada",
+        	activo: "ALUA",
+	        precio: 10,
+	        cantidad:5,
+	        monto: 100,
+	        tipo_de_orden:"market",
+	        vencimiento:"immediate",
+	        cantidad_a_mostrar: 1
+        }
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        $.ajax({
+            type: 'POST',
+            url: window.location.origin + "/testSave",
+            data: JSON.stringify(data),
+            success: (response) => {
+                console.log("Todo bien");
+            },
+            error: (e) => {
+                console.log(e);
+            }
+        });
+    });
+    var chatSocket = new WebSocket(
+        'ws://' + window.location.host + '/socketcluster/');
+
+    chatSocket.onmessage = function(e) {
+        var data = JSON.parse(e.data);
+        console.log(data.message);
+    };
+
+    chatSocket.onclose = function(e) {
+        console.error('Chat socket closed unexpectedly');
+    };
+
+
+</script>
+</html>

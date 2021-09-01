@@ -1,0 +1,55 @@
+{% load static %}
+{% load l10n %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="{% static "/img/favicon.ico" %}">
+    <title>BAVSA</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/floating-labels/">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "/librerias/bootstrap/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Personalizado -->
+    <link href="{% static "/css/login.css" %}" rel="stylesheet">
+    <style>
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+{% block content %}
+    <form method="post" class="form-signin2" id="signUpForm">
+        {% csrf_token %}
+        <div class="text-center mb-4">
+            <img class="mb-4" src="{% static "/img/logo.png" %}" alt="">
+            <h1 class="h3 mb-3 font-weight-normal" style="color:white">Registrarse</h1>
+        </div>
+        {% for field in form %}
+            <div class="form-label-group">
+                {{ field }}
+                {{ field.label_tag }}
+            </div>
+            {% for error in field.errors %}
+                <p style="color: red">{{ error }}</p>
+            {% endfor %}
+        {% endfor %}
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Sign up</button>
+    </form>
+{% endblock %}
+</body>
+<script src="{% static "/librerias/bootstrap/bootstrap.min.js" %}"></script>
+<script src="{% static "/librerias/jquery/jquery.min.js" %}"></script>
+<script>
+    window.onload = () => {
+        let labels = document.getElementsByTagName("label")
+        for (let label of labels){
+            let input = document.getElementById(label.htmlFor)
+            input.placeholder = label.innerHTML;
+            input.classList.add("form-control");
+        }
+    }
+</script>
+</html>

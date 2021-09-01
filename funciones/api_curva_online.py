@@ -4,6 +4,7 @@ from pyhomebroker import HomeBroker
 import pandas
 import numpy as np
 import os
+from time import sleep
 
 def main():
         broker = '12'
@@ -21,8 +22,8 @@ def main():
         #Save each board with its settlements to a CSV file
         #date = '{}'.format(datetime.now().strftime('%Y%m%d'))
         
-        snapshot["government_bonds"].to_csv('{}'.format("funciones/government_bonds.csv"))
-        snapshot["corporate_bonds"].to_csv('{}'.format("funciones/corporate_bonds.csv"))
+        snapshot["government_bonds"].to_csv('{}'.format("government_bonds.csv"))
+        snapshot["corporate_bonds"].to_csv('{}'.format("corporate_bonds.csv"))
 
 
 
@@ -63,6 +64,14 @@ def main():
         return government_bonds, corporate_bonds
 
 
+print ("Start Pyhomebroker")
+i = 0
+while True:
+        print("Curva actualizada ", i, " vez/veces")
+        main()
+        i+=1
+        sleep(30)
+        
 #pandas.set_option('display.max_rows', None)
 # government_bonds, corporate_bonds = main()
 # print(government_bonds)

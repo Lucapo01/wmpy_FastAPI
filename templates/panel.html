@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- NO OLVIDAR -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+
+    <!-- TradingView -->
+    <script type="text/javascript" src="static/librerias/tradingView/charting_library.standalone.js"></script>
+    <script type="text/javascript" src="static/librerias/tradingView/polyfills.js"></script>
+    <script type="text/javascript" src="static/librerias/tradingView/bundle.js"></script>
+
+    <!-- bootstrap/jquery/icons/alertefy -->
+    <script src="static/librerias/jquery/jquery.min.js"></script>
+    <script src="static/librerias/alertefy/alertify.min.js"></script>
+    <link href="static/librerias/alertefy/alertify.min.css" rel="stylesheet" />
+
+    <!-- NOTIES -->
+    <link rel="stylesheet" type="text/css" href="static/librerias/notie/notie.min.css" />
+    <script src="static/librerias/notie/notie.min.js"></script>
+
+    <!-- mi libreria -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Robin Dashboard</title>
+
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-center contenedor-loader" id="contenedor-loader">
+        <div id="loader" class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+
+    <div id="contenedor-main" class="contenedor" style="display:none;">
+
+        <!--///// MENU LATERAL \\\\\-->
+        <nav id="asideMenu" class="asideMenu asideMenu--collapsed">
+            <a href="#" id="menuPaneles" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Paneles">
+                    <i class="material-icons">dashboard</i>
+                </div>
+                <span class="asideMenu__label">Paneles</span>
+            </a>
+            <a href="#" id="menuOrdenes" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Órdenes">
+                    <i class="material-icons">fact_check</i>
+                </div>
+                <span class="asideMenu__label">Órdenes</span>
+            </a>
+            <a href="#" id="menuCurvas" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Curvas">
+                    <i class="material-icons">insights</i>
+                </div>
+                <span class="asideMenu__label">Curvas</span>
+            </a>
+            <a href="#" id="menuGraficos" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Gráficos">
+                    <i class="material-icons">bar_chart</i>
+                </div>
+                <span class="asideMenu__label">Gráficos</span>
+            </a>
+            <a href="#" id="menuFav" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Favoritos">
+                    <i class="material-icons">star</i>
+                </div>
+                <span class="asideMenu__label">Favoritos</span>
+            </a>
+            <a href="#" id="menuBooks" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Books">
+                    <i class="material-icons">book</i>
+                </div>
+                <span class="asideMenu__label">Books</span>
+            </a>
+            <a href="#" id="menuPerfil" class="asideMenu__link">
+                <div class="asideMenu__icon-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Perfil">
+                    <i class="material-icons">person</i>
+                </div>
+                <span class="asideMenu__label">Perfil</span>
+            </a>
+            <img class="asideMenu__img" src="static/img/aside_publicitario.png" alt="">
+
+
+        </nav>
+
+        <!--///// MENU SUPERIOR \\\\\-->
+
+        <div class="columna">
+            <header class="header">
+                <div onclick="collapse()" id="btnMenu" class="header__button asideMenu__link">
+                    <i class="material-icons">menu_open</i>
+                </div>
+                <div>
+                    <img src="static/img/logo_blanco.png" alt="">
+                </div>
+
+                <div class="header__icon">
+                    <span class="conexion" id="spanConexion"></span>&nbsp;&nbsp;
+
+                    <a href="/logout">
+                        <i class="material-icons">logout</i>
+                        <span class="asideMenu__label">log-out</span>
+                    </a>
+                </div>
+            </header>
+
+            <!--///// MAIN \\\\\-->
+
+            <main class="main">
+                <section id="home" class="ocultar">
+                    <P>
+                    <h2 class="row heading">Bienvenido</h2>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam fuga repudiandae odio
+                    itaque.
+                    inventore consequuntur.
+                    </P>
+                </section>
+
+                <section id="paneles" class="mostrar">
+                    <nav id="menuPanelesNav" class="navbar sticky-top navbar-expand-lg navbar-light bg-light mb-2">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelesMenuModel" aria-controls="panelesMenuModel"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand">Paneles</a>
+                            <div class="collapse navbar-collapse" id="panelesMenuModel">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="listPaneles"></ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <form class="form-inline menuLiquidacion" id="tipoDePlazo">
+                        <label id="menuLiquidacion__titulo" class="menuLiquidacion__titulo"
+                            for=""><strong>Liquidación:</strong>
+                        </label>
+
+                        <input type="radio" id="48" name="liquidacion" value="48" checked="true">
+                        <label for="48">48Hs</label>
+
+                        <input type="radio" id="24" name="liquidacion" value="24">
+                        <label for="24">24Hs</label>
+
+                        <input type="radio" id="ci" name="liquidacion" value="CI">
+                        <label for="ci">CI</label>
+
+                    </form>
+                    <table id="htabla" class="ocultar trading-table table-sortable">
+                        <thead>
+                            <tr>
+                                <th data-sort-type="text" colspan="4">Especie</th>
+                                <th data-sort-type="text">Plazo</th>
+                                <th data-sort-type="numeric">Cantidad <br>Compra</th>
+                                <th data-sort-type="numeric">Precio <br>Compra</th>
+                                <th data-sort-type="numeric">Precio <br>Venta</th>
+                                <th data-sort-type="numeric">Cantidad <br>Venta</th>
+                                <th data-sort-type="numeric">Último</th>
+                                <th data-sort-type="numeric">Min.</th>
+                                <th data-sort-type="numeric">Max.</th>
+                                <th data-sort-type="numeric">Volúmen</th>
+                                <th data-sort-type="numeric">Cierre</th>
+                                <th data-sort-type="numeric">Último <br> Operado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <div class="banner">
+                        <img src="static/img/banner_publicitario.png" alt="">
+                    </div>
+
+                    <!-- Modal 
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Cerrar"></button>
+                                </div>
+                                <div class="modal-body bg-dark" style="padding:0px">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </section>
+
+                <section id="ordenes" class="ocultar">
+
+                    <table class="table operaciones-table">
+                        <!-- TABLA DE ABAJO DONDE VAN LAS VENTAS QUE SE ESTAN EJECUTANDO -->
+                        <thead>
+                            <th>Órdenes del día</th>
+                            <tr id="trFilter" class="table-header">
+                                <th scope="col">
+
+                                    <div class="btn-group">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Status
+                                            <i class="material-icons icon-line-gray md-18">filter_alt</i>
+                                            <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
+                                        </button>
+                                        <ul id="chk-status" class="dropdown-menu">
+                                            <li><input type="checkbox" data-filtro="pendiente" />Pendiente</li>
+                                            <li><input type="checkbox" data-filtro="operada" />Operada</li>
+                                            <li><input type="checkbox" data-filtro="ejecutada total" />Ejecutada total
+                                            </li>
+                                            <li><input type="checkbox" data-filtro="ejecutada parcial" />Ejecutada
+                                                parcial</li>
+                                        </ul>
+
+                                    </div>
+                                </th>
+                                <th scope="col">
+
+                                    <div class="btn-group">
+
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Especie
+                                            <i class="material-icons icon-line-gray md-18">filter_alt</i>
+                                        </button>
+                                        <ul id="chk-especie" class="dropdown-menu">
+                                            <li><input type="checkbox" data-filtro="ALUA48" />ALUA48</li>
+                                            <li><input type="checkbox" data-filtro="APLE48" />APLE48</li>
+                                            <li><input type="checkbox" data-filtro="MIRG48" />MIRG48</li>
+                                            <li><input type="checkbox" data-filtro="TXAR48" />TXAR48</li>
+                                            <li><input type="checkbox" data-filtro="VALO48" />VALO48</li>
+                                            <li><input type="checkbox" data-filtro="YPFD48" />YPFD48</li>
+                                            <li><input type="checkbox" data-filtro="CEPU48" />CEPU48</li>
+                                            <li><input type="checkbox" data-filtro="TGSU248" />TGSU248</li>
+                                            <li><input type="checkbox" data-filtro="TGSU248">TECO248</li>
+                                            <li><input type="checkbox" data-filtro="TGSU248">TECO248</li>
+                                            <li><input type="checkbox" data-filtro="TRAN48" />TRAN48</li>
+                                        </ul>
+                                    </div>
+
+                                </th>
+                                <th scope="col">
+
+                                    Precio
+                                </th>
+                                <th scope="col">
+
+                                    Cantidad
+                                </th>
+                                <th scope="col">
+
+                                    Monto
+                                </th>
+                                <th scope="col">
+                                    <div class="btn-group">
+
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Tipo de orden
+                                            <i class="material-icons icon-line-gray md-18">filter_alt</i>
+                                        </button>
+                                        <ul id="chk-tipo" class="dropdown-menu">
+                                            <li><input type="checkbox" />Limit</li>
+                                            <li><input type="checkbox" />Stop limit</li>
+                                            <li><input type="checkbox" />Market</li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="btn-group">
+
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Vigencia
+                                            <i class="material-icons icon-line-gray md-18">filter_alt</i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><input type="checkbox" />Day</li>
+                                            <li><input type="checkbox" />IOC</li>
+                                            <li><input type="checkbox" />FOK</li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Tipo de operación
+                                            <i class="material-icons icon-line-gray md-18">filter_alt</i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><input type="checkbox" />Compra</li>
+                                            <li><input type="checkbox" />Venta</li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    Ejecutados
+                                </th>
+                                <th scope="col">
+                                    Acción
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+
+                </section>
+                <section id="books" class="ocultar">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#booksMenuModel" aria-controls="booksMenuModel" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand">Books</a>
+                            <div class="collapse navbar-collapse" id="booksMenuModel">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="listBooks">
+                                    <li class="nav-item" id="booksMenu_nuevo" style="display: none !important">
+                                        <a class="nav-link" href="#">Nuevo Book</a>
+
+                                    </li>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <h2 class="row heading">Books</h2>
+                </section>
+
+                <section id="perfil" class="ocultar">
+
+                    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mb-2">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#perfilMenuModel" aria-controls="perfilMenuModel" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand">Perfil</a>
+                            <div class="collapse navbar-collapse" id="perfilMenuModel">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="listPerfil">
+                                    <li class="nav-item" id="perfilMenuComitente">
+                                        <a class="nav-link" href="#">Tenencia</a>
+                                    </li>
+                                    <li class="nav-item" id="perfilMenuTenencia">
+                                        <a class="nav-link" href="#">Comitente</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- <h2 class="row heading">Tenencia</h2> -->
+
+                    <div id="comitente">
+                        <div id="tenencia" class="rowSection tenencia">
+                            <div class="tenencia__img">
+                                <img src="static/img/usr.jpg" alt="usuario">
+                            </div>
+                            <div class="items">
+                                <div class="tenencia__item">
+                                    <span class="tenencia__icon">
+                                        <i class="material-icons">tag</i>
+                                    </span>
+                                    <div class="tenencia__contenido">
+                                        <h6>Comitente:</h6> <span data-id="comitente">794613</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="tenencia__item">
+                                    <span class="tenencia__icon">
+                                        <i class="material-icons">person</i>
+                                    </span>
+                                    <div class="tenencia__contenido">
+                                        <h6>Nombre:</h6> <span data-id="nombre">John</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 tenencia__item">
+                                    <span class="tenencia__icon">
+                                        <i class="material-icons">person</i>
+                                    </span>
+                                    <div class="tenencia__contenido">
+                                        <h6>Apellido:</h6> <span data-id="apellido">Doe</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 tenencia__item">
+                                    <span class="tenencia__icon">
+                                        <i class="material-icons">email</i>
+                                    </span>
+                                    <div class="tenencia__contenido">
+                                        <h6>Email:</h6><span data-id="email">john_doe@email.com</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="donut tenencia__chart"></div>
+
+
+                        </div>
+
+                        <div class="tenencia__table">
+                            <div style="width: 100%; background-color: transparent;">
+                                <table id="tenenciaTable" class="table tenencia-table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Especie</th>
+                                            <th>Tipo</th>
+                                            <th>Moneda</th>
+                                            <th>T+0</th>
+                                            <th>T+1</th>
+                                            <th>T+2</th>
+                                            <th>Cantidad</th>
+                                            <th>Precio</th>
+                                            <th>Totalizado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tenenciaTableBody">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--<div class="tenencia__img tenencia__chart">
+                            <img src="static/img/chart.png" alt="">
+                             <figure class="highcharts-figure">
+                                        <div id="container"></div>
+                                     
+                                      </figure>
+    
+                                    <script>
+                                        Highcharts.chart('container', {
+                                            chart: {
+                                                type: 'pie',
+                                                options3d: {
+                                                    enabled: true,
+                                                    alpha: 45
+                                                }
+                                            },
+                                            title: {
+                                                text: 'Contents of Highsoft\'s weekly fruit delivery'
+                                            },
+                                            subtitle: {
+                                                text: '3D donut in Highcharts'
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    innerSize: 100,
+                                                    depth: 45
+                                                }
+                                            },
+                                            series: [{
+                                                name: 'Delivered amount',
+                                                data: [
+                                                    ['Bananas', 8],
+                                                    ['Kiwi', 3],
+                                                    ['Mixed nuts', 1],
+                                                    ['Oranges', 6],
+                                                    ['Apples', 8],
+                                                    ['Pears', 4],
+                                                    ['Clementines', 4],
+                                                    ['Reddish (bag)', 1],
+                                                    ['Grapes (bunch)', 1]
+                                                ]
+                                            }]
+                                        });
+                                    </script> 
+                        </div>-->
+
+                        </div>
+
+                        <div class="container comitente__contenedor">
+                            <div class="comitente__contenedor--box">
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <div class="item">
+                                            <h3>Comitente en pesos</h3>
+                                            <div>
+                                                <h6 for="disponiblepesos">Crédito disponible</h6>
+                                                <input type="number" name="disponiblepesos" id=""
+                                                    data-id="disponiblepesos" value="100.000">
+                                            </div>
+                                            <div>
+                                                <h6 for="comppesos">Crédito comprometido</h6>
+                                                <input type="number" name="comppesos" id="" data-id="comppesos"
+                                                    value="0">
+                                            </div>
+                                            <div>
+                                                <h6 for="usadopesos">Crédito usado</h6>
+                                                <input type="number" name="usadopesos" id="" data-id="usadopesos"
+                                                    value="0">
+                                            </div>
+                                            <div>
+                                                <h6 for="tenenciapesos">Tenencia total</h6>
+                                                <input type="number" name="tenenciapesos" id="" data-id="tenenciapesos"
+                                                    value="200.000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="item">
+                                            <h3>Comitente en dólares</h3>
+                                            <div>
+                                                <h6 for="disponibledolares">Crédito disponible</h6>
+                                                <input type="number" name="disponibledolares" id=""
+                                                    data-id="disponibledolares">
+                                            </div>
+                                            <div>
+                                                <h6 for="compdolares">Crédito comprometido</h6>
+                                                <input type="number" name="compdolares" id="" data-id="compdolares">
+                                            </div>
+                                            <div>
+                                                <h6 for="usadodolares">Crédito usado</h6>
+                                                <input type="number" name="usadodolares" id="" data-id="usadodolares">
+                                            </div>
+                                            <div>
+                                                <h6 for="tenenciadolares">Tenencia total</h6>
+                                                <input type="number" name="tenenciadolares" id=""
+                                                    data-id="tenenciadolares">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="item item--centrado">
+
+                                            <div>
+                                                <h6 for="aforo">Aforo</h6>
+                                                <input type="number" name="aforo" id="" data-id="aforo">
+                                            </div>
+                                            <div>
+                                                <h6 for="tenenciatotal">Tenencia total</h6>
+                                                <input type="number" name="tenenciatotal" id="" data-id="tenenciatotal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- INFO USUARIO -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="item">
+                                        <h3>Información de usuario</h3>
+                                        <div>
+                                            <h6 for="perfil">Perfil</h6>
+                                            <input type="text" placeholder="Perfil" data-id="perfil">
+                                        </div>
+                                        <div>
+                                            <h6 for="cbu">CBU</h6>
+                                            <input type="text" placeholder="CBU" data-id="cbu">
+                                        </div>
+
+                                        <div>
+                                            <h6 for="celular">Tel. Celular</h6>
+                                            <input type="tel" placeholder="011 555 555" data-id="telcel">
+                                        </div>
+                                        <div>
+                                            <h6 for="fijo">Tel. Fijo</h6>
+                                            <input type="tel" placeholder="+54 9 011-548-6015" data-id="telfijo">
+                                        </div>
+
+                                        <div>
+                                            <h6 for="domreal">Domicilio Real</h6>
+                                            <input type="text" placeholder="Domicilio Real" data-id="domreal">
+                                        </div>
+                                        <div>
+                                            <h6 for="domlegal">Domicilio Legal</h6>
+                                            <input type="text" placeholder="Domicilio Legal" data-id="domlegal">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <!-- MAIN_CURVAS_MENU -->
+
+
+                <section id="curvas" class="curvas ocultar">
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#curvasMenuModel" aria-controls="curvasMenuModel" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand">Curvas</a>
+                            <div class="collapse navbar-collapse" id="curvasMenuModel">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="listCurvas">
+                                    <li class="nav-item" id="curvasMenu_bonosUsd" style="display: none !important">
+                                        <a class=" btn btn-sm btn-outline-secondary" href="#">Bono</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                    <!-- MAIN_CURVAS_Bonos U$D -->
+
+                    <div id="tabs">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tabCurva" type="button" role="tab" aria-controls="home"
+                                    aria-selected="true">Curva</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tabCierre" type="button" role="tab" aria-controls="profile"
+                                    aria-selected="false">Análisis al
+                                    cierre</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tabOnline" type="button" role="tab" aria-controls="contact"
+                                    aria-selected="false">Análisis
+                                    online</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tabCurva" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <div id="chartdiv"></div>
+                            </div>
+                            <div class="tab-pane fade col-sm-12 col-xl-4" id="tabCierre" role="tabpanel"
+                                aria-labelledby="profile-tab">
+                                <table class="table table-hover curvas-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Ticker</th>
+                                            <th scope="col">TIR</th>
+                                            <th scope="col">DM</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="bodyTabCierre">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade col-sm-12 col-xl-4" id="tabOnline" role="tabpanel" aria-labelledby="contact-tab">
+                                <table class="table table-hover curvas-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Ticker</th>
+                                            <th scope="col">TIR</th>
+                                            <th scope="col">DM</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="graficos" class="ocultar">
+                    <div id="tradingView"></div>
+                    <!--
+                    <h2 class="row heading">Gráficos</h2>
+                    <div class="contenedor">
+
+                        <div class="columna trading">
+                            <div class="item">
+                               
+                            </div>
+                        </div>
+                        <div class="columna graficos-auxiliares">
+                            <div id="simbolo" class="item">SYMBOL</div>
+                            <div id="intradiario" class="item">INTRADIARIO</div>
+                        </div>
+                    </div>
+                    -->
+                </section>
+        </div>
+
+        <div style="display: none;">
+            <div id="trLider" class="operar row">
+                <h5 style="color:orange" data-id="ordenEspecie"></h5>
+                <div class="col">
+                    <label for="ordenPrecio">Precio</label>
+                    <input type="number" id="ordenPrecio" data-id="ordenPrecio" placeholder="Precio"
+                        onchange="onchangeOrden(0)">
+                </div>
+                <div class="col">
+                    <label id="ordenTituloCantidad" for="ordenCantidad">Cantidad</label>
+                    <input type="number" id="ordenCantidad" data-id="ordenCantidad" placeholder="Cantidad"
+                        onchange="onchangeOrden(2)">
+                </div>
+                <div class="col">
+                    <label id="ordenTituloMonto" for="ordenMonto">Monto</label>
+                    <input type="number" id="ordenMonto" data-id="ordenMonto" placeholder="Monto"
+                        onchange="onchangeOrden(1)">
+                </div>
+                <div class="col">
+                    <label for="ordenTipo">Tipo de orden</label>
+                    <select data-name="ordenTipo" data-id="ordenTipo" id="ordenTipo" placeholder="Tipo">
+                        <option value="limit">Limit</option>
+                        <option value="stop limit">Stop limit</option>
+                        <option value="market">Market</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <label for="ordenVencimiento">Vigencia</label>
+                    <select data-id="ordenVencimiento" id="ordenVencimiento" placeholder="">
+                        <option value="day">Day</option>
+                        <option value="ioc">Intermediate o Cancel (IOC)</option>
+                        <option value="fok">Fill or Kill (FOK)</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <button data-id="btnComprar" type="button" class="btn-outline-success btn-xs">Comprar</button>
+                    <button data-id="btnVender" type="button" onclick="emitirOrdVender()"
+                        class="btn-outline-danger btn-xs">Vender</button>
+                </div>
+            </div>
+
+            <div id="trFavoritos">
+                <h5 style="color:orange">Favoritos</h5>
+                <div id="checkboxFav" class="d-none form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for=""></label>
+                </div>
+                <div id="itemsFavs"></div>
+            </div>
+        </div>
+        </main>
+    </div>
+
+    <!-- Ventana de favoritos -->
+
+    <div id="htmlVentanaFavorito" class="container" style="display:none">
+        <form id='formularioCrearFav'>
+            <div class="form-group ventana-favoritos">
+                <label for="inputNombreFiltro">Nuevo favorito:</label>
+                <input type="text" class="form-control" id="inputNombreFiltro" aria-describedby="emailHelp"
+                    placeholder="Nombre" required>
+            </div>
+        </form>
+        <br>
+        <div id="itemFav" class="ocultar alert fav-list" role="alert">
+            <button type="button" class="btn-close" style="position: absolute; right: 0;padding-right:25px;"
+                aria-label="Close"></button>
+        </div>
+        <img id="publicidad_favoritos" alt="publicidad" src="static/img/banner_publicitario_favoritos.png">    </div>
+
+    <!-- HIGHCHARTS -->
+    <!-- 
+    <script src="static/librerias/highcharts/accessibility.js"></script>
+    <script src="static/librerias/highcharts/exporting.js"></script>
+    <script src="static/librerias/highcharts/export-data.js"></script> -->
+
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js"
+        integrity="sha512-0k6FXllQktdobw8Nc8KQN2WtZrOuxpMn7jC2RKCF6LR7EdOhhrg3H5cBPxhs3CFzQVlO6ni1B9SDLUPhBs0Alg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script src="js/themes/gris.js"></script> -->
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Brocker -->
+    <script src="static/js/tablas.js"></script>
+    <script src="static/js/operaciones.js"></script>
+    <script src="static/js/curvas.js"></script>
+    <script src="static/js/sort.tabla.js"></script>
+    <script src="static/js/api.js"></script>
+    <script src="static/js/favoritos.js"></script>
+    <script src="static/js/menu.js"></script>
+    <script src="static/js/websocket.js"></script>
+    <script src="static/js/perfil.js"></script>
+    <script src="static/js/ordenes.js"></script>
+
+    <!-- test -->
+    <script src="static/test.js"></script>
+
+    <!-- principal -->
+    <script src="static/js/main.js"></script>
+
+    <script>
+        function csrfSafeMethod(method) { //Para hacer un post al django y mandar el csrf token
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+    </script>
+
+</body>
+
+</html>
