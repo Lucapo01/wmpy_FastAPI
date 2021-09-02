@@ -4,6 +4,7 @@ from pyhomebroker import HomeBroker
 import pandas
 import numpy as np
 import os
+import time
 from time import sleep
 
 def main():
@@ -63,14 +64,36 @@ def main():
         # finally:
         return government_bonds, corporate_bonds
 
+def get_status():
+        import requests
+        try:
+                r = requests.get('http://127.0.0.1:8000/status')
+        except:
+                print("Chau chau adios")
+                return False
+        data=r.json()["Server Operating"]
+        return data
 
-print ("Start Pyhomebroker")
-i = 0
-while True:
-        print("Curva actualizada ", i, " vez/veces")
-        main()
-        i+=1
-        sleep(30)
+def execute():      
+        print ("Start Pyhomebroker")
+        sleep(5)
+        i = 0
+        while True:
+                
+                stat = get_status()
+                if stat == False:
+                        break
+                else:
+                        print("Curva actualizada ", i, " vez/veces")
+                        main()
+                        i+=1
+                sleep(30)
+        exit()
+
+        
+
+if __name__ == "__main__":
+        execute()
         
 #pandas.set_option('display.max_rows', None)
 # government_bonds, corporate_bonds = main()

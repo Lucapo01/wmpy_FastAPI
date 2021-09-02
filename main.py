@@ -24,7 +24,14 @@ async def websocket_endpoint(websocket: WebSocket):
     while True:
         data = await websocket.receive_text()
         await websocket.send_text(f"Message text was: {data}")
+    
 
+@app.get("/status")
+async def status():
+    json ={}
+    json["Server Operating"] = True
+    return json
+    
 
 @app.get("/", response_class=HTMLResponse)
 def root(request: Request):
@@ -79,17 +86,16 @@ def actualizar():
 
 # PRUEBA DE STREAMING
 
-# def fake_video_streamer():
-#     for i in range(10):
-#         aux = random.randint(1, 100)
-#         aux = str(aux)
-#         yield aux+"\n"
-#     yield actualizar()
+async def fake_video_streamer():
+    for i in range(10):
+        aux = random.randint(1, 100)
+        aux = str(aux)
+        yield aux+"\n"
 
 
-# @app.get("/test")
-# async def main():
-#     return StreamingResponse(fake_video_streamer())
+@app.get("/test")
+async def test():
+    return StreamingResponse(fake_video_streamer())
 
 
 # EJEMPLO DE TEMPLATES Y STATICS
