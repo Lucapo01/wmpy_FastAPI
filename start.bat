@@ -1,3 +1,3 @@
 @echo off
-call funciones/api_curva_online.py
+start "api curva" /D funciones api_curva_online.bat
 uvicorn main:app

@@ -1,11 +1,13 @@
 from fastapi import FastAPI, Request, WebSocket
-import asyncio
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import subprocess
+from fastapi.responses import StreamingResponse
 
+import asyncio
 from time import sleep
+import numpy as np
+from numpy import random
 
 from Curvas import crearCsvBadlar, crearCsvCer, crearCsvHardDolar, crearCsvOn
 from Curvas import onlineBadlar, onlineCer, onlineDolar, onlineOn
@@ -73,6 +75,21 @@ def actualizar():
     dic["Status Dolar"] = crearCsvHardDolar.main()
     dic["Status On"] = crearCsvOn.main()
     return dic
+
+
+# PRUEBA DE STREAMING
+
+# def fake_video_streamer():
+#     for i in range(10):
+#         aux = random.randint(1, 100)
+#         aux = str(aux)
+#         yield aux+"\n"
+#     yield actualizar()
+
+
+# @app.get("/test")
+# async def main():
+#     return StreamingResponse(fake_video_streamer())
 
 
 # EJEMPLO DE TEMPLATES Y STATICS
