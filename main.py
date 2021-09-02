@@ -11,7 +11,7 @@ from numpy import random
 
 from Curvas import crearCsvBadlar, crearCsvCer, crearCsvHardDolar, crearCsvOn
 from Curvas import onlineBadlar, onlineCer, onlineDolar, onlineOn
-#from funciones import api_curva_online as api_curva
+from funciones import api_curva_online as api_curva
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -24,6 +24,11 @@ async def websocket_endpoint(websocket: WebSocket):
     while True:
         data = await websocket.receive_text()
         await websocket.send_text(f"Message text was: {data}")
+
+
+# @app.on_event("startup")
+# def startup():
+#     api_curva.main()
     
 
 @app.get("/status")
@@ -63,13 +68,12 @@ def api_curvas():
 
 @app.post("/getDatosCurvas")
 def curvas():
-    gov, corp = []#api_curva.main()
     dic={}
     lista=[]
-    lista.append(onlineBadlar.iniciarTabla(gov))
-    lista.append(onlineCer.iniciarTabla(gov))
-    lista.append(onlineDolar.iniciarTabla(gov))
-    lista.append(onlineOn.iniciarTabla(corp))
+    lista.append(onlineBadlar.iniciarTabla())
+    lista.append(onlineCer.iniciarTabla())
+    lista.append(onlineDolar.iniciarTabla())
+    lista.append(onlineOn.iniciarTabla())
     dic["Graficos"] = lista
     return dic
 

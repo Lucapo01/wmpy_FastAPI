@@ -7,6 +7,7 @@ from time import sleep
 import numpy as np
 from numpy import random
 from . import especies
+import pandas as pd
 
 module_dir = os.path.dirname(__file__)
 
@@ -181,12 +182,17 @@ def graficar(mat):
 
     return listaBar
 
-def iniciarTabla(bonds):
+def iniciarTabla():
     todos=especies.csvOn
     aux=[]
     dicAPI={}
     dicF = {}
     dicF = {}
+
+    module_dir = os.path.dirname(__file__)
+    module_dir = os.path.join(module_dir, r"..",r"funciones",r"corporate_bonds.csv")
+
+    bonds = pd.read_csv(module_dir)
     
     dicF, dicP = cargarCSV(todos)
 
@@ -199,8 +205,13 @@ def iniciarTabla(bonds):
 
     for i in todos:
         try:
-            loc = bonds.loc[((i+"d").upper(),'48hs'),'last']
-            locPrev = bonds.loc[((i+"d").upper(),'48hs'),'previous_close']
+            loc = float(bonds.loc[(bonds["symbol"] == i.upper()+"D") & (bonds["settlement"] == "48hs"),"last"])
+        except:
+            loc = np.nan
+        
+        try:
+            locPrev = float(bonds.loc[(bonds["symbol"] == i.upper()+"D") & (bonds["settlement"] == "48hs"),"previous_close"])
+
             if np.isnan(loc) == False:
                 dicAPI[i+"o"] = float(loc)*-1
                 #print("LAST---------------------- in", i)
@@ -209,8 +220,8 @@ def iniciarTabla(bonds):
                 #print("PREVIOUS---------------------- in", i)
             else:
                 todos.remove(i)
-        except:
-            print("Error descargando ", i, " en On desde la API")
+        except Exception as e:
+            print("Error descargando ", i, " en On desde la API: ", e)
             todos.remove(i)
     
     for i in dicAPI.keys():

@@ -5,6 +5,7 @@ import os
 import json
 from time import sleep
 import numpy as np
+import pandas as pd
 from numpy import random
 from . import especies
 
@@ -34,7 +35,7 @@ def calcularTIR(dicF, dicP):
             dm = dur(listaF, listaP, tir)                      #v
             mat.append([nombre,round(tir*100,3), round(dm,3), detalles, str(listaF[0]), listaP[0]*-1])
         except Exception as e:
-            print("Exception: ", e, " in Badlar at ", nombre)
+            print("TIR Exception: ", e, " in Badlar at ", nombre)
     
     return mat
 
@@ -181,10 +182,15 @@ def graficar(mat):
 
     return listaBar
 
-def iniciarTabla(bonds):
+def iniciarTabla():
     todos= especies.csvBadlar
     aux=[]
     dicAPI={}
+
+    module_dir = os.path.dirname(__file__)
+    module_dir = os.path.join(module_dir, r"..",r"funciones",r"government_bonds.csv")
+
+    bonds = pd.read_csv(module_dir)
     
     dicF, dicP =cargarCSV(todos)
 
@@ -196,8 +202,13 @@ def iniciarTabla(bonds):
 
     for i in todos:
         try:
-            loc = bonds.loc[(i.upper(),'48hs'),'last']
-            locPrev = bonds.loc[(i.upper(),'48hs'),'previous_close']
+            loc = float(bonds.loc[(bonds["symbol"] == i.upper()) & (bonds["settlement"] == "48hs"),"last"])
+        except:
+            loc = np.nan
+        
+        try:
+            locPrev = float(bonds.loc[(bonds["symbol"] == i.upper()) & (bonds["settlement"] == "48hs"),"previous_close"])
+
             if np.isnan(loc) == False:
                 dicAPI[i] = float(loc)*-1
                 #print("LAST---------------------- in", i)
@@ -206,8 +217,8 @@ def iniciarTabla(bonds):
                 #print("PREVIOUS---------------------- in", i)
             else:
                 todos.remove(i)
-        except:
-            print("Error descargando ", i, " en On desde la API")
+        except Exception as e:
+            print("Error descargando ", i, " en Badlar desde la API: ", e)
             todos.remove(i)
     
     for i in dicAPI.keys():

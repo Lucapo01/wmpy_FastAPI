@@ -22,9 +22,11 @@ def main():
 
         #Save each board with its settlements to a CSV file
         #date = '{}'.format(datetime.now().strftime('%Y%m%d'))
-        
-        snapshot["government_bonds"].to_csv('{}'.format("government_bonds.csv"))
-        snapshot["corporate_bonds"].to_csv('{}'.format("corporate_bonds.csv"))
+
+        module_dir = os.path.dirname(__file__)
+
+        snapshot["government_bonds"].to_csv('{}'.format(os.path.join(module_dir, r"government_bonds.csv")))
+        snapshot["corporate_bonds"].to_csv('{}'.format(os.path.join(module_dir, r"corporate_bonds.csv")))
 
 
 
@@ -48,21 +50,13 @@ def main():
                 24hs	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaT
                 48hs	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaT
 
-        '''
-
         government_bonds = snapshot['government_bonds']
         corporate_bonds = snapshot['corporate_bonds']
 
-        print("ACTUALIZANDO CURVA")
+        '''
 
-        # try:
-        #         modul_dir = os.path.dirname(__file__)
-        #         government_bonds.to_csv(os.path.join(modul_dir,r"government_bonds.csv"), na_rep = np.nan, index_label=None)
-        #         corporate_bonds.to_csv(os.path.join(modul_dir,r"corporate_bonds.csv"), na_rep = np.nan, index_label=None)
-        # except Exception as e:
-        #        print("Error creating CSV: ", e)
-        # finally:
-        return government_bonds, corporate_bonds
+        print("ACTUALIZANDO CURVA")
+        # return government_bonds, corporate_bonds
 
 def get_status():
         import requests
@@ -74,12 +68,12 @@ def get_status():
         data=r.json()["Server Operating"]
         return data
 
-def execute():      
+def execute():
         print ("Start Pyhomebroker")
         sleep(5)
         i = 0
         while True:
-                
+
                 stat = get_status()
                 if stat == False:
                         break
@@ -90,11 +84,11 @@ def execute():
                 sleep(30)
         exit()
 
-        
+
 
 if __name__ == "__main__":
         execute()
-        
+
 #pandas.set_option('display.max_rows', None)
 # government_bonds, corporate_bonds = main()
 # print(government_bonds)
