@@ -133,8 +133,14 @@ async def simple_send(emailSCH: EmailSchema) -> JSONResponse:
 
 
 @app.get("/validar/{tokenDomain}")
-def validar(request: Request, tokenDomain: str):
+async def validar(request: Request, tokenDomain: str):
     print(tokenDomain)
+    query = validation_table.select()
+    data = await database.fetch_all(query)
+    for item in data[::-1]:
+        if item[2] == tokenDomain:
+            print("Mail aceptado",item[1])
+            break
 
 
 
