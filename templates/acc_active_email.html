@@ -1,5 +1,5 @@
-{% autoescape off %}
-Hola {{ user.username }},
+<p>
+Hola {username:},
 Hace click en el siguiente link para activar tu cuenta,
-http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
-{% endautoescape %}
+http://{domain:}/validar/{tokenDomain:}
+</p>
