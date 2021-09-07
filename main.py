@@ -2,7 +2,6 @@ from fastapi import FastAPI, Request, WebSocket,BackgroundTasks
 from fastapi.responses import HTMLResponse,JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import StreamingResponse
 
 
 import asyncio
@@ -11,18 +10,17 @@ import numpy as np
 from numpy import random
 import uvicorn
 from typing import List
-import databases
-import sqlalchemy
+import time
 from fastapi import FastAPI
 from fastapi_mail import FastMail, MessageSchema
 from uuid import uuid4
-
-
+import sqlalchemy
 
 from Curvas import crearCsvBadlar, crearCsvCer, crearCsvHardDolar, crearCsvOn
 from Curvas import onlineBadlar, onlineCer, onlineDolar, onlineOn
 from Models import ValidationIn, Validation, EmailSchema, User
 from settings import confMail, host_url
+import myDatabase
 
 # Instancias
 #-------------------------------------------------------------------
@@ -31,28 +29,9 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
-DATABASE_URL = "sqlite:///./test.db"
-
-database = databases.Database(DATABASE_URL)
-
-metadata = sqlalchemy.MetaData()
-
-validation_table = sqlalchemy.Table(
-    "validation table",
-    metadata,
-    sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
-    sqlalchemy.Column("email", sqlalchemy.String),
-    sqlalchemy.Column("token", sqlalchemy.String),
-)
-
-
-engine = sqlalchemy.create_engine(
-    DATABASE_URL, connect_args={"check_same_thread": False}
-)
-metadata.create_all(engine)
+database, validation_table, user_table = myDatabase.main()
 
 #--------------------------------------------------------------------
-
 #Configuraciones y Servicios
 #--------------------------------------------------------------------
 
@@ -87,7 +66,6 @@ async def status():
     return json
 
 #--------------------------------------------------------------------
-
 # Views
 #--------------------------------------------------------------------
 
@@ -123,8 +101,33 @@ async def simple_send(emailSCH: EmailSchema) -> JSONResponse:
         subtype="html"
         )
 
+    query = validation_table.select()
+    data = await database.fetch_all(query)
 
-    query = validation_table.insert().values(email=emailSCH.dict().get("email")[0], token=str(token))
+    print(data)
+    aux=0
+
+    if data!=[]:
+        for item in data:
+            if emailSCH.dict().get("email")[0] in item:
+                print("COINCIDE")
+                aux=0
+                break
+            elif emailSCH.dict().get("email")[0] not in item:
+                print("NO COINCIDE")
+                aux=1
+
+
+    if aux==1 or data==[]:
+        query = validation_table.insert().values(email=emailSCH.dict().get("email")[0],
+                                                    token=str(token),
+                                                    timestamp=time.ctime(),
+                                                    username=emailSCH.dict().get("user"),
+                                                    password=emailSCH.dict().get("password"))
+    elif aux==0:
+        print("ACTUALIZAR TOKEN")
+            
+
     await database.execute(query)
 
     fm = FastMail(confMail)
