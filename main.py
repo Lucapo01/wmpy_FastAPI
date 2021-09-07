@@ -15,6 +15,7 @@ from fastapi import FastAPI
 from fastapi_mail import FastMail, MessageSchema
 from uuid import uuid4
 import sqlalchemy
+from sqlalchemy import text
 
 from Curvas import crearCsvBadlar, crearCsvCer, crearCsvHardDolar, crearCsvOn
 from Curvas import onlineBadlar, onlineCer, onlineDolar, onlineOn
@@ -80,12 +81,7 @@ def signup(request: Request):
 
 
 @app.post("/signup", response_class=HTMLResponse)
-def signup(request: Request):
-    return templates.TemplateResponse("message.html", {"request": request})
-
-
-@app.post("/email")
-async def simple_send(emailSCH: EmailSchema) -> JSONResponse:
+async def signup(request: Request, emailSCH: EmailSchema) -> HTMLResponse:
 
     token = str(uuid4())
     fileHtml = open('templates/acc_active_email.html', 'r')
@@ -109,41 +105,48 @@ async def simple_send(emailSCH: EmailSchema) -> JSONResponse:
 
     if data!=[]:
         for item in data:
-            if emailSCH.dict().get("email")[0] in item:
-                print("COINCIDE")
+            if emailSCH.dict().get("email")[0] in item:  #Si el email ingresado ya existe actualiza el token
                 aux=0
+                # Actualiza el item TOKEN del usuario al que se desea re-signear
+                query = validation_table.update().where(sqlalchemy.sql.column('email') == emailSCH.dict().get("email")[0]).values(token=str(token), timestamp=time.ctime())                                                                                   
                 break
             elif emailSCH.dict().get("email")[0] not in item:
-                print("NO COINCIDE")
                 aux=1
 
-
+    # Si no existe el mail o la DB esta vacía, agrega el nuevo usuario con toda su data + token + timestamp
     if aux==1 or data==[]:
         query = validation_table.insert().values(email=emailSCH.dict().get("email")[0],
                                                     token=str(token),
                                                     timestamp=time.ctime(),
                                                     username=emailSCH.dict().get("user"),
                                                     password=emailSCH.dict().get("password"))
-    elif aux==0:
-        print("ACTUALIZAR TOKEN")
             
 
     await database.execute(query)
 
     fm = FastMail(confMail)
     await fm.send_message(message)
-    return JSONResponse(status_code=200, content={"message": "email has been sent"})
+    return templates.TemplateResponse("message.html", {"request": request})
 
 
 @app.get("/validar/{tokenDomain}")
 async def validar(request: Request, tokenDomain: str):
     print(tokenDomain)
-    query = validation_table.select()
-    data = await database.fetch_all(query)
-    for item in data[::-1]:
-        if item[2] == tokenDomain:
-            print("Mail aceptado",item[1])
-            break
+
+    if tokenDomain == validation_table.select(sqlalchemy.sql.column('token')):
+        print("TE LOGEASTE PETE BIEN AHI")
+
+        query = user_table.insert().values(email=validation_table.select(sqlalchemy.sql.column('email')).where(sqlalchemy.sql.column('token')==tokenDomain),
+                                            username=validation_table.select(sqlalchemy.sql.column('username')).where(sqlalchemy.sql.column('token')==tokenDomain),
+                                            password=validation_table.select(sqlalchemy.sql.column('password')).where(sqlalchemy.sql.column('token')==tokenDomain))
+
+
+    # query = validation_table.select()
+    # data = await database.fetch_all(query)
+    # for item in data[::-1]:
+    #     if item[2] == tokenDomain:
+    #         print("Mail aceptado",item[1])
+    #         break
 
 
 
